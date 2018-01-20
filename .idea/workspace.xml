@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f678e21-b94b-4ba6-9cfc-3010e41cd3c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_template/en.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/article/en.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article/cn.html" afterPath="$PROJECT_DIR$/article/cn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article/en.html" afterPath="$PROJECT_DIR$/article/en.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cn.html" afterPath="$PROJECT_DIR$/cn.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/article/cn.html" afterPath="$PROJECT_DIR$/cn.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="736">
+              <caret line="1987" column="0" lean-forward="false" selection-start-line="1987" selection-start-column="0" selection-end-line="1987" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -36,8 +34,8 @@
       <file leaf-file-name="cn.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article/cn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1887" selection-end-column="0" />
+            <state relative-caret-position="718">
+              <caret line="1879" column="0" lean-forward="false" selection-start-line="1879" selection-start-column="0" selection-end-line="1879" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -222,20 +220,20 @@
       <file leaf-file-name="en.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article/en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="33" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1995" selection-end-column="0" />
+            <state relative-caret-position="718">
+              <caret line="1987" column="0" lean-forward="false" selection-start-line="1987" selection-start-column="0" selection-end-line="1987" selection-end-column="0" />
               <folding>
-                <marker date="1516432263342" expanded="true" signature="83448:83540" ph="..." />
+                <marker date="1516433429245" expanded="true" signature="83464:83556" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cn.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cn.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3169">
-              <caret line="1855" column="17" lean-forward="true" selection-start-line="1855" selection-start-column="17" selection-end-line="1855" selection-end-column="17" />
+            <state relative-caret-position="718">
+              <caret line="1879" column="0" lean-forward="false" selection-start-line="1879" selection-start-column="0" selection-end-line="1879" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -244,7 +242,7 @@
       <file leaf-file-name="en.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_template/en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="-513">
               <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
               <folding />
             </state>
@@ -472,7 +470,19 @@
       <find>mapToDictionary</find>
       <find>3.4</find>
       <find>img</find>
+      <find>l</find>
+      <find>local</find>
+      <find>localh</find>
+      <find>localho</find>
+      <find>localhost</find>
     </findStrings>
+    <replaceStrings>
+      <replace>vn_co_tdp_lod_p_</replace>
+      <replace>collectjs.com</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\workplace\git\collectjs_com</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -486,10 +496,10 @@
         <option value="$PROJECT_DIR$/en.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index_template/en.html" />
-        <option value="$PROJECT_DIR$/article/en.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/article/cn.html" />
         <option value="$PROJECT_DIR$/cn.html" />
+        <option value="$PROJECT_DIR$/article/cn.html" />
+        <option value="$PROJECT_DIR$/article/en.html" />
       </list>
     </option>
   </component>
@@ -573,20 +583,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="index_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collectjs_com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collectjs_com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -728,25 +724,27 @@
       <workItem from="1516418417880" duration="1773000" />
       <workItem from="1516428196800" duration="2156000" />
       <workItem from="1516430390997" duration="1785000" />
-      <workItem from="1516432210084" duration="344000" />
+      <workItem from="1516432210084" duration="1016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10315000" />
+    <option name="totallyTimeSpent" value="10987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1216" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -758,7 +756,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -794,7 +791,7 @@
         <state relative-caret-position="190">
           <caret line="10" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1989" selection-end-column="0" />
           <folding>
-            <marker date="1516432263342" expanded="true" signature="83448:83540" ph="..." />
+            <marker date="1516433429245" expanded="true" signature="83464:83556" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2748,14 +2745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_template/en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/md/en.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -2930,36 +2919,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article/en.html">
+    <entry file="file://$PROJECT_DIR$/cn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1995" selection-end-column="0" />
-          <folding>
-            <marker date="1516432263342" expanded="true" signature="83448:83540" ph="..." />
-          </folding>
+        <state relative-caret-position="718">
+          <caret line="1879" column="0" lean-forward="false" selection-start-line="1879" selection-start-column="0" selection-end-line="1879" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/index_template/en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="-513">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/article/cn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1887" selection-end-column="0" />
+        <state relative-caret-position="718">
+          <caret line="1879" column="0" lean-forward="false" selection-start-line="1879" selection-start-column="0" selection-end-line="1879" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cn.html">
+    <entry file="file://$PROJECT_DIR$/article/en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3169">
-          <caret line="1855" column="17" lean-forward="true" selection-start-line="1855" selection-start-column="17" selection-end-line="1855" selection-end-column="17" />
+        <state relative-caret-position="718">
+          <caret line="1987" column="0" lean-forward="false" selection-start-line="1987" selection-start-column="0" selection-end-line="1987" selection-end-column="0" />
+          <folding>
+            <marker date="1516433429245" expanded="true" signature="83464:83556" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="1987" column="0" lean-forward="false" selection-start-line="1987" selection-start-column="0" selection-end-line="1987" selection-end-column="0" />
           <folding />
         </state>
       </provider>
