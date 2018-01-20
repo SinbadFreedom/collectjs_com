@@ -72,5 +72,5 @@ function showLeftHighlight() {
 }
 
 /** 加载后立即执行, 通过文章URL显示打开左侧边栏*/
-showLeftHighlight();
+// showLeftHighlight();
 
