@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>collect.js 中文文档</title>
+    <title>cn.md</title>
     <meta name="description" content="cn.md">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Expires" content="0">
@@ -11,8 +11,8 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="Cache" content="no-cache">
 
-    <link rel="stylesheet" href="http://collectjs.com/css/bootstrap.css">
-    <link rel="stylesheet" href="http://collectjs.com/css/dashidan.css">
+    <link rel="stylesheet" href="http://localhost/css/bootstrap.css">
+    <link rel="stylesheet" href="http://localhost/css/dashidan.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -27,8 +27,8 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://collectjs.com/index.html">English</a></li>
-            <li><a href="http://collectjs.com/cn.html">中文</a></li>
+            <li><a href="http://localhost/index.html">English</a></li>
+            <li><a href="http://localhost/cn.html">中文</a></li>
         </ul>
     </div>
 </nav>
@@ -38,173 +38,152 @@
             <div id="xs_index" class="col-sm-3 col-md-3 col-lg-3 col-xs-12 hidden-xs">
                 <div>
                     <div class="dsd_title">
-                        <h3><span id="faq_title">collect.js document</span></h3>
-                    </div>
-                    <div id="faq" class="dsd_catalog_left_show">
-                        <div class="dsd_catalog"><a href="#1">1 Installation</a><br><a href="#2">2 Tip</a><br><a
-                                href="#3">3 Strictness and comparisons</a><br>
-                            <p><a href="#3.1">3.1 <code>all()</code></a></p>
-                            <p><a href="#3.2">3.2 <code>average()</code></a></p>
-                            <p><a href="#3.3">3.3 <code>avg()</code></a></p>
-                            <p><a href="#3.4">3.4 <code>chunk()</code></a></p>
-                            <p><a href="#3.5">3.5 <code>collapse()</code></a></p>
-                            <p><a href="#3.6">3.6 <code>combine()</code></a></p>
-                            <p><a href="#3.7">3.7 <code>concat()</code></a></p>
-                            <p><a href="#3.8">3.8 <code>contains()</code></a></p>
-                            <p><a href="#3.9">3.9 <code>count()</code></a></p>
-                            <p><a href="#3.10">3.10 <code>crossJoin()</code></a></p>
-                            <p><a href="#3.11">3.11 <code>dd()</code></a></p>
-                            <p><a href="#3.12">3.12 <code>diff()</code></a></p>
-                            <p><a href="#3.13">3.13 <code>diffAssoc()</code></a></p>
-                            <p><a href="#3.14">3.14 <code>diffKeys()</code></a></p>
-                            <p><a href="#3.15">3.15 <code>dump()</code></a></p>
-                            <p><a href="#3.16">3.16 <code>each()</code></a></p>
-                            <p><a href="#3.17">3.17 <code>eachSpread()</code></a></p>
-                            <p><a href="#3.18">3.18 <code>every()</code></a></p>
-                            <p><a href="#3.19">3.19 <code>except()</code></a></p>
-                            <p><a href="#3.20">3.20 <code>filter()</code></a></p>
-                            <p><a href="#3.21">3.21 <code>first()</code></a></p>
-                            <p><a href="#3.22">3.22 <code>firstWhere()</code></a></p>
-                            <p><a href="#3.23">3.23 <code>flatMap()</code></a></p>
-                            <p><a href="#3.24">3.24 <code>flatten()</code></a></p>
-                            <p><a href="#3.25">3.25 <code>flip()</code></a></p>
-                            <p><a href="#3.26">3.26 <code>forget()</code></a></p>
-                            <p><a href="#3.27">3.27 <code>forPage()</code></a></p>
-                            <p><a href="#3.28">3.28 <code>get()</code></a></p>
-                            <p><a href="#3.29">3.29 <code>groupBy()</code></a></p>
-                            <p><a href="#3.30">3.30 <code>has()</code></a></p>
-                            <p><a href="#3.31">3.31 <code>implode()</code></a></p>
-                            <p><a href="#3.32">3.32 <code>intersect()</code></a></p>
-                            <p><a href="#3.33">3.33 <code>intersectByKeys()</code></a></p>
-                            <p><a href="#3.34">3.34 <code>isEmpty()</code></a></p>
-                            <p><a href="#3.35">3.35 <code>isNotEmpty()</code></a></p>
-                            <p><a href="#3.36">3.36 <code>keyBy()</code></a></p>
-                            <p><a href="#3.37">3.37 <code>keys()</code></a></p>
-                            <p><a href="#3.38">3.38 <code>last()</code></a></p>
-                            <p><a href="#3.39">3.39 <code>macro()</code></a></p>
-                            <p><a href="#3.40">3.40 <code>map()</code></a></p>
-                            <p><a href="#3.41">3.41 <code>mapInto()</code></a></p>
-                            <p><a href="#3.42">3.42 <code>mapSpread()</code></a></p>
-                            <p><a href="#3.43">3.43 <code>mapToDictionary()</code></a></p>
-                            <p><a href="#3.44">3.44 <code>mapToGroups()</code></a></p>
-                            <p><a href="#3.45">3.45 <code>mapWithKeys()</code></a></p>
-                            <p><a href="#3.46">3.46 <code>max()</code></a></p>
-                            <p><a href="#3.47">3.47 <code>median()</code></a></p>
-                            <p><a href="#3.48">3.48 <code>merge()</code></a></p>
-                            <p><a href="#3.49">3.49 <code>min()</code></a></p>
-                            <p><a href="#3.50">3.50 <code>mode()</code></a></p>
-                            <p><a href="#3.51">3.51 <code>nth()</code></a></p>
-                            <p><a href="#3.52">3.52 <code>only()</code></a></p>
-                            <p><a href="#3.53">3.53 <code>pad()</code></a></p>
-                            <p><a href="#3.54">3.54 <code>partition()</code></a></p>
-                            <p><a href="#3.55">3.55 <code>pipe()</code></a></p>
-                            <p><a href="#3.56">3.56 <code>pluck()</code></a></p>
-                            <p><a href="#3.57">3.57 <code>pop()</code></a></p>
-                            <p><a href="#3.58">3.58 <code>prepend()</code></a></p>
-                            <p><a href="#3.59">3.59 <code>pull()</code></a></p>
-                            <p><a href="#3.60">3.60 <code>push()</code></a></p>
-                            <p><a href="#3.61">3.61 <code>put()</code></a></p>
-                            <p><a href="#3.62">3.62 <code>random()</code></a></p>
-                            <p><a href="#3.63">3.63 <code>reduce()</code></a></p>
-                            <p><a href="#3.64">3.64 <code>reject()</code></a></p>
-                            <p><a href="#3.65">3.65 <code>reverse()</code></a></p>
-                            <p><a href="#3.66">3.66 <code>search()</code></a></p>
-                            <p><a href="#3.67">3.67 <code>shift()</code></a></p>
-                            <p><a href="#3.68">3.68 <code>shuffle()</code></a></p>
-                            <p><a href="#3.69">3.69 <code>slice()</code></a></p>
-                            <p><a href="#3.70">3.70 <code>sort()</code></a></p>
-                            <p><a href="#3.71">3.71 <code>sortBy()</code></a></p>
-                            <p><a href="#3.72">3.72 <code>sortByDesc()</code></a></p>
-                            <p><a href="#3.73">3.73 <code>splice()</code></a></p>
-                            <p><a href="#3.74">3.74 <code>split()</code></a></p>
-                            <p><a href="#3.75">3.75 <code>sum()</code></a></p>
-                            <p><a href="#3.76">3.76 <code>take()</code></a></p>
-                            <p><a href="#3.77">3.77 <code>tap()</code></a></p>
-                            <p><a href="#3.78">3.78 <code>times()</code></a></p>
-                            <p><a href="#3.79">3.79 <code>toArray()</code></a></p>
-                            <p><a href="#3.80">3.80 <code>toJson()</code></a></p>
-                            <p><a href="#3.81">3.81 <code>transform()</code></a></p>
-                            <p><a href="#3.82">3.82 <code>union()</code></a></p>
-                            <p><a href="#3.83">3.83 <code>unique()</code></a></p>
-                            <p><a href="#3.84">3.84 <code>unless()</code></a></p>
-                            <p><a href="#3.85">3.85 <code>unwrap()</code></a></p>
-                            <p><a href="#3.86">3.86 <code>values()</code></a></p>
-                            <p><a href="#3.89">3.89 <code>when()</code></a></p>
-                            <p><a href="#3.90">3.90 <code>where()</code></a></p>
-                            <p><a href="#3.91">3.91 <code>whereIn()</code></a></p>
-                            <p><a href="#3.92">3.92 <code>whereNotIn()</code></a></p>
-                            <p><a href="#3.93">3.93 <code>wrap()</code></a></p>
-                            <p><a href="#3.94">3.94 <code>zip()</code></a></p><a href="#4">4 Contribute</a><br><a
-                                    href="#5">5 License</a><br></div>
-                    </div>
+    <h3><span id="faq_title">collect.js document</span></h3>
+</div>
+<div id="faq" class="dsd_catalog_left_show">
+    <div class="dsd_catalog"><a href="#1">1 Installation</a><br><a href="#2">2 Tip</a><br><a
+            href="#3">3 Strictness and comparisons</a><br>
+        <p><a href="#3.1">3.1 <code>all()</code></a></p>
+        <p><a href="#3.2">3.2 <code>average()</code></a></p>
+        <p><a href="#3.3">3.3 <code>avg()</code></a></p>
+        <p><a href="#3.4">3.4 <code>chunk()</code></a></p>
+        <p><a href="#3.5">3.5 <code>collapse()</code></a></p>
+        <p><a href="#3.6">3.6 <code>combine()</code></a></p>
+        <p><a href="#3.7">3.7 <code>concat()</code></a></p>
+        <p><a href="#3.8">3.8 <code>contains()</code></a></p>
+        <p><a href="#3.9">3.9 <code>count()</code></a></p>
+        <p><a href="#3.10">3.10 <code>crossJoin()</code></a></p>
+        <p><a href="#3.11">3.11 <code>dd()</code></a></p>
+        <p><a href="#3.12">3.12 <code>diff()</code></a></p>
+        <p><a href="#3.13">3.13 <code>diffAssoc()</code></a></p>
+        <p><a href="#3.14">3.14 <code>diffKeys()</code></a></p>
+        <p><a href="#3.15">3.15 <code>dump()</code></a></p>
+        <p><a href="#3.16">3.16 <code>each()</code></a></p>
+        <p><a href="#3.17">3.17 <code>eachSpread()</code></a></p>
+        <p><a href="#3.18">3.18 <code>every()</code></a></p>
+        <p><a href="#3.19">3.19 <code>except()</code></a></p>
+        <p><a href="#3.20">3.20 <code>filter()</code></a></p>
+        <p><a href="#3.21">3.21 <code>first()</code></a></p>
+        <p><a href="#3.22">3.22 <code>firstWhere()</code></a></p>
+        <p><a href="#3.23">3.23 <code>flatMap()</code></a></p>
+        <p><a href="#3.24">3.24 <code>flatten()</code></a></p>
+        <p><a href="#3.25">3.25 <code>flip()</code></a></p>
+        <p><a href="#3.26">3.26 <code>forget()</code></a></p>
+        <p><a href="#3.27">3.27 <code>forPage()</code></a></p>
+        <p><a href="#3.28">3.28 <code>get()</code></a></p>
+        <p><a href="#3.29">3.29 <code>groupBy()</code></a></p>
+        <p><a href="#3.30">3.30 <code>has()</code></a></p>
+        <p><a href="#3.31">3.31 <code>implode()</code></a></p>
+        <p><a href="#3.32">3.32 <code>intersect()</code></a></p>
+        <p><a href="#3.33">3.33 <code>intersectByKeys()</code></a></p>
+        <p><a href="#3.34">3.34 <code>isEmpty()</code></a></p>
+        <p><a href="#3.35">3.35 <code>isNotEmpty()</code></a></p>
+        <p><a href="#3.36">3.36 <code>keyBy()</code></a></p>
+        <p><a href="#3.37">3.37 <code>keys()</code></a></p>
+        <p><a href="#3.38">3.38 <code>last()</code></a></p>
+        <p><a href="#3.39">3.39 <code>macro()</code></a></p>
+        <p><a href="#3.40">3.40 <code>map()</code></a></p>
+        <p><a href="#3.41">3.41 <code>mapInto()</code></a></p>
+        <p><a href="#3.42">3.42 <code>mapSpread()</code></a></p>
+        <p><a href="#3.43">3.43 <code>mapToDictionary()</code></a></p>
+        <p><a href="#3.44">3.44 <code>mapToGroups()</code></a></p>
+        <p><a href="#3.45">3.45 <code>mapWithKeys()</code></a></p>
+        <p><a href="#3.46">3.46 <code>max()</code></a></p>
+        <p><a href="#3.47">3.47 <code>median()</code></a></p>
+        <p><a href="#3.48">3.48 <code>merge()</code></a></p>
+        <p><a href="#3.49">3.49 <code>min()</code></a></p>
+        <p><a href="#3.50">3.50 <code>mode()</code></a></p>
+        <p><a href="#3.51">3.51 <code>nth()</code></a></p>
+        <p><a href="#3.52">3.52 <code>only()</code></a></p>
+        <p><a href="#3.53">3.53 <code>pad()</code></a></p>
+        <p><a href="#3.54">3.54 <code>partition()</code></a></p>
+        <p><a href="#3.55">3.55 <code>pipe()</code></a></p>
+        <p><a href="#3.56">3.56 <code>pluck()</code></a></p>
+        <p><a href="#3.57">3.57 <code>pop()</code></a></p>
+        <p><a href="#3.58">3.58 <code>prepend()</code></a></p>
+        <p><a href="#3.59">3.59 <code>pull()</code></a></p>
+        <p><a href="#3.60">3.60 <code>push()</code></a></p>
+        <p><a href="#3.61">3.61 <code>put()</code></a></p>
+        <p><a href="#3.62">3.62 <code>random()</code></a></p>
+        <p><a href="#3.63">3.63 <code>reduce()</code></a></p>
+        <p><a href="#3.64">3.64 <code>reject()</code></a></p>
+        <p><a href="#3.65">3.65 <code>reverse()</code></a></p>
+        <p><a href="#3.66">3.66 <code>search()</code></a></p>
+        <p><a href="#3.67">3.67 <code>shift()</code></a></p>
+        <p><a href="#3.68">3.68 <code>shuffle()</code></a></p>
+        <p><a href="#3.69">3.69 <code>slice()</code></a></p>
+        <p><a href="#3.70">3.70 <code>sort()</code></a></p>
+        <p><a href="#3.71">3.71 <code>sortBy()</code></a></p>
+        <p><a href="#3.72">3.72 <code>sortByDesc()</code></a></p>
+        <p><a href="#3.73">3.73 <code>splice()</code></a></p>
+        <p><a href="#3.74">3.74 <code>split()</code></a></p>
+        <p><a href="#3.75">3.75 <code>sum()</code></a></p>
+        <p><a href="#3.76">3.76 <code>take()</code></a></p>
+        <p><a href="#3.77">3.77 <code>tap()</code></a></p>
+        <p><a href="#3.78">3.78 <code>times()</code></a></p>
+        <p><a href="#3.79">3.79 <code>toArray()</code></a></p>
+        <p><a href="#3.80">3.80 <code>toJson()</code></a></p>
+        <p><a href="#3.81">3.81 <code>transform()</code></a></p>
+        <p><a href="#3.82">3.82 <code>union()</code></a></p>
+        <p><a href="#3.83">3.83 <code>unique()</code></a></p>
+        <p><a href="#3.84">3.84 <code>unless()</code></a></p>
+        <p><a href="#3.85">3.85 <code>unwrap()</code></a></p>
+        <p><a href="#3.86">3.86 <code>values()</code></a></p>
+        <p><a href="#3.89">3.89 <code>when()</code></a></p>
+        <p><a href="#3.90">3.90 <code>where()</code></a></p>
+        <p><a href="#3.91">3.91 <code>whereIn()</code></a></p>
+        <p><a href="#3.92">3.92 <code>whereNotIn()</code></a></p>
+        <p><a href="#3.93">3.93 <code>wrap()</code></a></p>
+        <p><a href="#3.94">3.94 <code>zip()</code></a></p><a href="#4">4 Contribute</a><br><a
+                href="#5">5 License</a><br></div>
+</div>
                 </div>
             </div>
             <div class="col-sm-9 col-md-9 col-lg-9">
                 <!-- 文章内容-->
                 <div id="xs_content_border">
-                    <p><img class="center-block img-responsive" src="../img/collectjs.jpg" alt=""/></p>
-                    <blockquote>
-                        <p>Convenient and dependency free wrapper for working with arrays and objects</p>
-                    </blockquote>
-                    <p><a href="https://travis-ci.org/ecrmnn/collect.js/builds"><img class="center-block img-responsive"
-                                                                                     src="https://img.shields.io/travis/ecrmnn/collect.js/master.svg?style=flat-square"
-                                                                                     alt="Travis"/></a>
-                        <a href="http://badge.fury.io/js/collect.js"><img class="center-block img-responsive"
-                                                                          src="https://img.shields.io/npm/v/collect.js.svg?style=flat-square"
-                                                                          alt="npm version"/></a>
-                        <a href="http://badge.fury.io/js/collect.js"><img class="center-block img-responsive"
-                                                                          src="https://img.shields.io/npm/dm/collect.js.svg?style=flat-square"
-                                                                          alt="npm downloads"/></a>
-                        <a href="http://badge.fury.io/js/collect.js"><img class="center-block img-responsive"
-                                                                          src="https://img.shields.io/npm/l/collect.js.svg?style=flat-square"
-                                                                          alt="npm license"/></a>
-                        <a href="http://makeapullrequest.com"><img class="center-block img-responsive"
-                                                                   src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"
-                                                                   alt="PRs Welcome"/></a>
-                        <a href="https://github.com/ecrmnn/collect.js/blob/master/package.json"><img
-                                class="center-block img-responsive"
-                                src="https://img.shields.io/badge/dependencies-none-brightgreen.svg?style=flat-square"
-                                alt="dependencies"/></a>
-                        <a href="https://github.com/airbnb/javascript"><img class="center-block img-responsive"
-                                                                            src="https://img.shields.io/badge/code_style-airbnb-blue.svg?style=flat-square"
-                                                                            alt="eslint"/></a></p>
-                    <div class="dsd_title_1"><a href="#top" id="1"><h2>1 Installation</h2></a></div>
-                    <pre class="prettyprint"><code class="bash language-bash">npm install collect.js --save
+                    <div><div class="dsd_catalog"><a href="#1">1 Installation</a><br><a href="#2">2 Tip</a><br><a href="#3">3 Strictness and comparisons</a><br><p><a href="#3.1">3.1 <code>all()</code></a></p><p><a href="#3.2">3.2 <code>average()</code></a></p><p><a href="#3.3">3.3 <code>avg()</code></a></p><p><a href="#3.4">3.4 <code>chunk()</code></a></p><p><a href="#3.5">3.5 <code>collapse()</code></a></p><p><a href="#3.6">3.6 <code>combine()</code></a></p><p><a href="#3.7">3.7 <code>concat()</code></a></p><p><a href="#3.8">3.8 <code>contains()</code></a></p><p><a href="#3.9">3.9 <code>count()</code></a></p><p><a href="#3.10">3.10 <code>crossJoin()</code></a></p><p><a href="#3.11">3.11 <code>dd()</code></a></p><p><a href="#3.12">3.12 <code>diff()</code></a></p><p><a href="#3.13">3.13 <code>diffAssoc()</code></a></p><p><a href="#3.14">3.14 <code>diffKeys()</code></a></p><p><a href="#3.15">3.15 <code>dump()</code></a></p><p><a href="#3.16">3.16 <code>each()</code></a></p><p><a href="#3.17">3.17 <code>eachSpread()</code></a></p><p><a href="#3.18">3.18 <code>every()</code></a></p><p><a href="#3.19">3.19 <code>except()</code></a></p><p><a href="#3.20">3.20 <code>filter()</code></a></p><p><a href="#3.21">3.21 <code>first()</code></a></p><p><a href="#3.22">3.22 <code>firstWhere()</code></a></p><p><a href="#3.23">3.23 <code>flatMap()</code></a></p><p><a href="#3.24">3.24 <code>flatten()</code></a></p><p><a href="#3.25">3.25 <code>flip()</code></a></p><p><a href="#3.26">3.26 <code>forget()</code></a></p><p><a href="#3.27">3.27 <code>forPage()</code></a></p><p><a href="#3.28">3.28 <code>get()</code></a></p><p><a href="#3.29">3.29 <code>groupBy()</code></a></p><p><a href="#3.30">3.30 <code>has()</code></a></p><p><a href="#3.31">3.31 <code>implode()</code></a></p><p><a href="#3.32">3.32 <code>intersect()</code></a></p><p><a href="#3.33">3.33 <code>intersectByKeys()</code></a></p><p><a href="#3.34">3.34 <code>isEmpty()</code></a></p><p><a href="#3.35">3.35 <code>isNotEmpty()</code></a></p><p><a href="#3.36">3.36 <code>keyBy()</code></a></p><p><a href="#3.37">3.37 <code>keys()</code></a></p><p><a href="#3.38">3.38 <code>last()</code></a></p><p><a href="#3.39">3.39 <code>macro()</code></a></p><p><a href="#3.40">3.40 <code>map()</code></a></p><p><a href="#3.41">3.41 <code>mapInto()</code></a></p><p><a href="#3.42">3.42 <code>mapSpread()</code></a></p><p><a href="#3.43">3.43 <code>mapToDictionary()</code></a></p><p><a href="#3.44">3.44 <code>mapToGroups()</code></a></p><p><a href="#3.45">3.45 <code>mapWithKeys()</code></a></p><p><a href="#3.46">3.46 <code>max()</code></a></p><p><a href="#3.47">3.47 <code>median()</code></a></p><p><a href="#3.48">3.48 <code>merge()</code></a></p><p><a href="#3.49">3.49 <code>min()</code></a></p><p><a href="#3.50">3.50 <code>mode()</code></a></p><p><a href="#3.51">3.51 <code>nth()</code></a></p><p><a href="#3.52">3.52 <code>only()</code></a></p><p><a href="#3.53">3.53 <code>pad()</code></a></p><p><a href="#3.54">3.54 <code>partition()</code></a></p><p><a href="#3.55">3.55 <code>pipe()</code></a></p><p><a href="#3.56">3.56 <code>pluck()</code></a></p><p><a href="#3.57">3.57 <code>pop()</code></a></p><p><a href="#3.58">3.58 <code>prepend()</code></a></p><p><a href="#3.59">3.59 <code>pull()</code></a></p><p><a href="#3.60">3.60 <code>push()</code></a></p><p><a href="#3.61">3.61 <code>put()</code></a></p><p><a href="#3.62">3.62 <code>random()</code></a></p><p><a href="#3.63">3.63 <code>reduce()</code></a></p><p><a href="#3.64">3.64 <code>reject()</code></a></p><p><a href="#3.65">3.65 <code>reverse()</code></a></p><p><a href="#3.66">3.66 <code>search()</code></a></p><p><a href="#3.67">3.67 <code>shift()</code></a></p><p><a href="#3.68">3.68 <code>shuffle()</code></a></p><p><a href="#3.69">3.69 <code>slice()</code></a></p><p><a href="#3.70">3.70 <code>sort()</code></a></p><p><a href="#3.71">3.71 <code>sortBy()</code></a></p><p><a href="#3.72">3.72 <code>sortByDesc()</code></a></p><p><a href="#3.73">3.73 <code>splice()</code></a></p><p><a href="#3.74">3.74 <code>split()</code></a></p><p><a href="#3.75">3.75 <code>sum()</code></a></p><p><a href="#3.76">3.76 <code>take()</code></a></p><p><a href="#3.77">3.77 <code>tap()</code></a></p><p><a href="#3.78">3.78 <code>times()</code></a></p><p><a href="#3.79">3.79 <code>toArray()</code></a></p><p><a href="#3.80">3.80 <code>toJson()</code></a></p><p><a href="#3.81">3.81 <code>transform()</code></a></p><p><a href="#3.82">3.82 <code>union()</code></a></p><p><a href="#3.83">3.83 <code>unique()</code></a></p><p><a href="#3.84">3.84 <code>unless()</code></a></p><p><a href="#3.85">3.85 <code>unwrap()</code></a></p><p><a href="#3.86">3.86 <code>values()</code></a></p><p><a href="#3.89">3.89 <code>when()</code></a></p><p><a href="#3.90">3.90 <code>where()</code></a></p><p><a href="#3.91">3.91 <code>whereIn()</code></a></p><p><a href="#3.92">3.92 <code>whereNotIn()</code></a></p><p><a href="#3.93">3.93 <code>wrap()</code></a></p><p><a href="#3.94">3.94 <code>zip()</code></a></p><a href="#4">4 Contribute</a><br><a href="#5">5 License</a><br></div></div><p><img class="center-block img-responsive" src="../img/collectjs.jpg" alt="" /></p>
+<blockquote>
+  <p>Convenient and dependency free wrapper for working with arrays and objects</p>
+</blockquote>
+<p><a href="https://travis-ci.org/ecrmnn/collect.js/builds"><img class="center-block img-responsive" src="https://img.shields.io/travis/ecrmnn/collect.js/master.svg?style=flat-square" alt="Travis" /></a>
+<a href="http://badge.fury.io/js/collect.js"><img class="center-block img-responsive" src="https://img.shields.io/npm/v/collect.js.svg?style=flat-square" alt="npm version" /></a>
+<a href="http://badge.fury.io/js/collect.js"><img class="center-block img-responsive" src="https://img.shields.io/npm/dm/collect.js.svg?style=flat-square" alt="npm downloads" /></a>
+<a href="http://badge.fury.io/js/collect.js"><img class="center-block img-responsive" src="https://img.shields.io/npm/l/collect.js.svg?style=flat-square" alt="npm license" /></a>
+<a href="http://makeapullrequest.com"><img class="center-block img-responsive" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+<a href="https://github.com/ecrmnn/collect.js/blob/master/package.json"><img class="center-block img-responsive" src="https://img.shields.io/badge/dependencies-none-brightgreen.svg?style=flat-square" alt="dependencies" /></a>
+<a href="https://github.com/airbnb/javascript"><img class="center-block img-responsive" src="https://img.shields.io/badge/code_style-airbnb-blue.svg?style=flat-square" alt="eslint" /></a></p>
+<div class="dsd_title_1"><a href="#top"  id="1"><h2>1 Installation</h2></a></div>
+<pre class="prettyprint"><code class="bash language-bash">npm install collect.js --save
 </code></pre>
-                    <div class="dsd_title_1"><a href="#top" id="2"><h2>2 Tip</h2></a></div>
-                    <p>Using Laravel as your backend? Collect.js offers an (almost) identical api to <a
-                            href="https://laravel.com/docs/5.5/collections">Laravel Collections</a> 5.5. <a
-                            href="#strictness-and-comparisons">See differences</a>.</p>
-                    <div class="dsd_title_1"><a href="#top" id="3"><h2>3 Strictness and comparisons</h2></a></div>
-                    <p>All comparisons in <code>collect.js</code> are done using strict equality. Using loose equality
-                        comparisons are generally frowned upon in JavaScript. Laravel only performs "loose" comparisons
-                        by default and offer several "strict" comparison methods. These methods have not been
-                        implemented in <code>collect.js</code> because all methods are strict by default. </p>
-                    <h5>Methods that have not been implemented:</h5>
-                    <ul>
-                        <li>~~<code>containsStrict</code>~~ use <code>contains()</code></li>
-                        <li>~~<code>uniqueStrict</code>~~ use <code>unique()</code></li>
-                        <li>~~<code>whereStrict</code>~~ use <code>where()</code></li>
-                        <li>~~<code>whereInStrict</code>~~ use <code>whereIn()</code></li>
-                        <li>~~<code>whereNotInStrict</code>~~ use <code>whereNotIn()</code></li>
-                    </ul>
-                    <div class="dsd_title_2"><a href="#top" id="3.1">3.1 <code>all()</code></a></div>
-                    <p>The all method returns the underlying array represented by the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3]).all();
+<div class="dsd_title_1"><a href="#top"  id="2"><h2>2 Tip</h2></a></div>
+<p>Using Laravel as your backend? Collect.js offers an (almost) identical api to <a href="https://laravel.com/docs/5.5/collections">Laravel Collections</a> 5.5. <a href="#strictness-and-comparisons">See differences</a>.</p>
+<div class="dsd_title_1"><a href="#top"  id="3"><h2>3 Strictness and comparisons</h2></a></div>
+<p>All comparisons in <code>collect.js</code> are done using strict equality. Using loose equality comparisons are generally frowned upon in JavaScript. Laravel only performs "loose" comparisons by default and offer several "strict" comparison methods. These methods have not been implemented in <code>collect.js</code> because all methods are strict by default. </p>
+<h5>Methods that have not been implemented:</h5>
+<ul>
+<li>~~<code>containsStrict</code>~~ use <code>contains()</code></li>
+<li>~~<code>uniqueStrict</code>~~ use <code>unique()</code></li>
+<li>~~<code>whereStrict</code>~~ use <code>where()</code></li>
+<li>~~<code>whereInStrict</code>~~ use <code>whereIn()</code></li>
+<li>~~<code>whereNotInStrict</code>~~ use <code>whereNotIn()</code></li>
+</ul>
+<div class="dsd_title_2"><a href="#top"  id="3.1">3.1 <code>all()</code></a></div>
+<p>The all method returns the underlying array represented by the collection:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3]).all();
 
 //=&gt; [1, 2, 3]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.2">3.2 <code>average()</code></a></div>
-                    <p>Alias for the <a href="#avg"><code>avg()</code></a> method</p>
-                    <div class="dsd_title_2"><a href="#top" id="3.3">3.3 <code>avg()</code></a></div>
-                    <p>The avg method returns the average of all items in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 3, 3, 7]).avg();
+<div class="dsd_title_2"><a href="#top"  id="3.2">3.2 <code>average()</code></a></div>
+<p>Alias for the <a href="#avg"><code>avg()</code></a> method</p>
+<div class="dsd_title_2"><a href="#top"  id="3.3">3.3 <code>avg()</code></a></div>
+<p>The avg method returns the average of all items in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 3, 3, 7]).avg();
 
 //=&gt; 3.5
 </code></pre>
-                    <p>If the collection contains nested arrays or objects, you should pass a key to use for determining
-                        which values to calculate the average:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<p>If the collection contains nested arrays or objects, you should pass a key to use for determining which values to calculate the average:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
   name: 'JavaScript: The Good Parts', pages: 176
 }, {
   name: 'JavaScript: The Definitive Guide', pages: 1096
@@ -214,9 +193,9 @@ collection.avg('pages');
 
 //=&gt; 636
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.4">3.4 <code>chunk()</code></a></div>
-                    <p>The chunk method breaks the collection into multiple, smaller collections of a given size:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6, 7]);
+<div class="dsd_title_2"><a href="#top"  id="3.4">3.4 <code>chunk()</code></a></div>
+<p>The chunk method breaks the collection into multiple, smaller collections of a given size:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6, 7]);
 
 const chunks = collection.chunk(4);
 
@@ -224,9 +203,9 @@ chunks.all();
 
 //=&gt; [[1, 2, 3, 4], [5, 6, 7]]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.5">3.5 <code>collapse()</code></a></div>
-                    <p>The collapse method collapses a collection of arrays into a single, flat collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([[1], [{}, 5, {}], ['xoxo']]);
+<div class="dsd_title_2"><a href="#top"  id="3.5">3.5 <code>collapse()</code></a></div>
+<p>The collapse method collapses a collection of arrays into a single, flat collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([[1], [{}, 5, {}], ['xoxo']]);
 
 const collapsed = collection.collapse();
 
@@ -234,7 +213,7 @@ collapsed.all();
 
 //=&gt; [1, {}, 5, {}, 'xoxo']
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+<pre class="prettyprint"><code class="js language-js">const collection = collect([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
 
 const collapsed = collection.collapse();
 
@@ -242,10 +221,9 @@ collapsed.all();
 
 //=&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.6">3.6 <code>combine()</code></a></div>
-                    <p>The combine method combines the keys of the collection with the values of another array or
-                        collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect(['name', 'number']);
+<div class="dsd_title_2"><a href="#top"  id="3.6">3.6 <code>combine()</code></a></div>
+<p>The combine method combines the keys of the collection with the values of another array or collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect(['name', 'number']);
 
 const combine = collection.combine(['Steven Gerrard', 8]);
 
@@ -256,10 +234,10 @@ combine.all();
 //=&gt;   number: 8
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.7">3.7 <code>concat()</code></a></div>
-                    <p>The concat method is used to merge two or more collections/arrays/objects:</p>
-                    <p><em>You can also <code>concat()</code> an array of objects, or a multidimensional array</em></p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.7">3.7 <code>concat()</code></a></div>
+<p>The concat method is used to merge two or more collections/arrays/objects:</p>
+<p><em>You can also <code>concat()</code> an array of objects, or a multidimensional array</em></p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 collection
   .concat(['a', 'b', 'c'])
@@ -272,9 +250,9 @@ collection.all();
 
 //=&gt; [1, 2, 3, 'a', 'b', 'c', 'Steven Gerrard', 8]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.8">3.8 <code>contains()</code></a></div>
-                    <p>The contains method determines whether the collection contains a given item:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.8">3.8 <code>contains()</code></a></div>
+<p>The contains method determines whether the collection contains a given item:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   name: 'Steven Gerrard',
   number: 8
 });
@@ -285,15 +263,14 @@ collection.contains('name');
 collection.contains('age');
 //=&gt; false
 </code></pre>
-                    <p>You may also work with arrays</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<p>You may also work with arrays</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 collection.contains(3);
 //=&gt; true
 </code></pre>
-                    <p>You may also pass a key / value pair to the contains method, which will determine if the given
-                        pair exists in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<p>You may also pass a key / value pair to the contains method, which will determine if the given pair exists in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   name: 'Steven Gerrard',
   number: 8
 });
@@ -301,8 +278,8 @@ collection.contains(3);
 collection.contains('name', 'Steve Jobs');
 //=&gt; false
 </code></pre>
-                    <p>Finally, you may also pass a callback to the contains method to perform your own truth test:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<p>Finally, you may also pass a callback to the contains method to perform your own truth test:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 collection.contains(function (value, key) {
   return value &gt; 5;
@@ -310,18 +287,17 @@ collection.contains(function (value, key) {
 
 //=&gt; false
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.9">3.9 <code>count()</code></a></div>
-                    <p>The count method returns the total number of items in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
+<div class="dsd_title_2"><a href="#top"  id="3.9">3.9 <code>count()</code></a></div>
+<p>The count method returns the total number of items in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
 
 collection.count();
 
 //=&gt; 4
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.10">3.10 <code>crossJoin()</code></a></div>
-                    <p>The crossJoin method cross joins the collection with the given array or collection, returning all
-                        possible permutations:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2]);
+<div class="dsd_title_2"><a href="#top"  id="3.10">3.10 <code>crossJoin()</code></a></div>
+<p>The crossJoin method cross joins the collection with the given array or collection, returning all possible permutations:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2]);
 
 collection.crossJoin(['a', 'b']);
 
@@ -334,18 +310,16 @@ collection.all();
 //=&gt;   [2, 'b'],
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.11">3.11 <code>dd()</code></a></div>
-                    <p>The dd method will console.log the collection and exit the current process:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]).dd();
+<div class="dsd_title_2"><a href="#top"  id="3.11">3.11 <code>dd()</code></a></div>
+<p>The dd method will console.log the collection and exit the current process:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]).dd();
 
 //=&gt; [1, 2, 3]
 //=&gt; (Exits node.js process)
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.12">3.12 <code>diff()</code></a></div>
-                    <p>The diff method compares the collection against another collection or a plain array based on its
-                        values. This method will return the values in the original collection that are not present in
-                        the given collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.12">3.12 <code>diff()</code></a></div>
+<p>The diff method compares the collection against another collection or a plain array based on its values. This method will return the values in the original collection that are not present in the given collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const diff = collection.diff([1, 2, 3, 9]);
 
@@ -353,12 +327,10 @@ diff.all();
 
 //=&gt; [4, 5]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.13">3.13 <code>diffAssoc()</code></a></div>
-                    <p>The diffAssoc method compares the collection against another collection or a plain object based
-                        on its keys and values.
-                        This method will return the key / value pairs in the original collection that are not present in
-                        the given collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.13">3.13 <code>diffAssoc()</code></a></div>
+<p>The diffAssoc method compares the collection against another collection or a plain object based on its keys and values. 
+This method will return the key / value pairs in the original collection that are not present in the given collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   color: 'orange',
   type: 'fruit',
   remain: 6,
@@ -375,11 +347,9 @@ diff.all();
 
 //=&gt; { color: 'orange', remain: 6 };
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.14">3.14 <code>diffKeys()</code></a></div>
-                    <p>The diffKeys method compares the collection against another collection or a plain object based on
-                        its keys. This method will return the key / value pairs in the original collection that are not
-                        present in the given collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.14">3.14 <code>diffKeys()</code></a></div>
+<p>The diffKeys method compares the collection against another collection or a plain object based on its keys. This method will return the key / value pairs in the original collection that are not present in the given collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   a: 'a',
   b: 'b',
   c: 'c',
@@ -395,9 +365,9 @@ diff.all();
 
 //=&gt; {a: 'a', c: 'c'}
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.15">3.15 <code>dump()</code></a></div>
-                    <p>The dump method outputs the results at that moment and then continues processing:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4])
+<div class="dsd_title_2"><a href="#top"  id="3.15">3.15 <code>dump()</code></a></div>
+<p>The dump method outputs the results at that moment and then continues processing:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4])
   .dump()
   .map(item =&gt; item * 2)
   .dump();
@@ -405,9 +375,9 @@ diff.all();
 //=&gt; [1, 2, 3, 4]
 //=&gt; [2, 4, 6, 8]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.16">3.16 <code>each()</code></a></div>
-                    <p>The each method iterates over the items in the collection and passes each item to a callback:</p>
-                    <pre class="prettyprint"><code class="js language-js">let sum = 0;
+<div class="dsd_title_2"><a href="#top"  id="3.16">3.16 <code>each()</code></a></div>
+<p>The each method iterates over the items in the collection and passes each item to a callback:</p>
+<pre class="prettyprint"><code class="js language-js">let sum = 0;
 
 const collection = collect([1, 3, 3, 7]);
 
@@ -418,9 +388,8 @@ collection.each(function (item) {
 //=&gt; console.log(sum);
 //=&gt; 14
 </code></pre>
-                    <p>If you would like to stop iterating through the items, you may return false from your
-                        callback:</p>
-                    <pre class="prettyprint"><code class="js language-js">let sum = 0;
+<p>If you would like to stop iterating through the items, you may return false from your callback:</p>
+<pre class="prettyprint"><code class="js language-js">let sum = 0;
 
 const collection = collect([1, 3, 3, 7]);
 
@@ -435,33 +404,30 @@ collection.each(function (item) {
 //=&gt; console.log(sum);
 //=&gt; 7
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.17">3.17 <code>eachSpread()</code></a></div>
-                    <p>The eachSpread method iterates over the collection's items, passing each nested item value into
-                        the given callback:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([['John Doe', 35], ['Jane Doe', 33]]);
+<div class="dsd_title_2"><a href="#top"  id="3.17">3.17 <code>eachSpread()</code></a></div>
+<p>The eachSpread method iterates over the collection's items, passing each nested item value into the given callback:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([['John Doe', 35], ['Jane Doe', 33]]);
 
 collection.eachSpread((name, age) =&gt; {
     //
 });
 </code></pre>
-                    <p>You may stop iterating through the items by returning false from the callback:</p>
-                    <pre class="prettyprint"><code class="js language-js">collection.eachSpread((name, age) =&gt; {
+<p>You may stop iterating through the items by returning false from the callback:</p>
+<pre class="prettyprint"><code class="js language-js">collection.eachSpread((name, age) =&gt; {
     return false;
 });
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.18">3.18 <code>every()</code></a></div>
-                    <p>The every method may be used to verify that all elements of a collection pass a given truth
-                        test:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).every(function (value, key) {
+<div class="dsd_title_2"><a href="#top"  id="3.18">3.18 <code>every()</code></a></div>
+<p>The every method may be used to verify that all elements of a collection pass a given truth test:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).every(function (value, key) {
   return value &gt; 2;
 });
 
 //=&gt; false
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.19">3.19 <code>except()</code></a></div>
-                    <p>The except method returns all items in the collection except for those with the specified
-                        keys:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.19">3.19 <code>except()</code></a></div>
+<p>The except method returns all items in the collection except for those with the specified keys:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   product_id: 1,
   price: 100,
   discount: false,
@@ -473,17 +439,16 @@ filtered.all();
 
 //=&gt; {product_id: 1}
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).except([2, 12]).all();
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).except([2, 12]).all();
 
 //=&gt; [1, 3, 4]
 </code></pre>
-                    <blockquote>
-                        <p>For the inverse of <code>except</code>, see the <code>only</code> method.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.20">3.20 <code>filter()</code></a></div>
-                    <p>The filter method filters the collection using the given callback, keeping only those items that
-                        pass a given truth test:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
+<blockquote>
+  <p>For the inverse of <code>except</code>, see the <code>only</code> method.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.20">3.20 <code>filter()</code></a></div>
+<p>The filter method filters the collection using the given callback, keeping only those items that pass a given truth test:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
 
 const filtered = collection.filter(function (value, key) {
     return value &gt; 2;
@@ -493,9 +458,8 @@ filtered.all();
 
 //=&gt; [3, 4]
 </code></pre>
-                    <p>If no callback is supplied, all entries of the collection that are equivalent to
-                        <code>false</code> will be removed:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([0, 1, 2, null, 3, 4, undefined, 5, 6, 7, [], 8, 9, {}, 10]);
+<p>If no callback is supplied, all entries of the collection that are equivalent to <code>false</code> will be removed:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([0, 1, 2, null, 3, 4, undefined, 5, 6, 7, [], 8, 9, {}, 10]);
 
 const filtered = collection.filter();
 
@@ -503,27 +467,25 @@ filtered.all();
 
 //=&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 </code></pre>
-                    <blockquote>
-                        <p>For the inverse of <code>filter</code>, see the <code>reject</code> method.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.21">3.21 <code>first()</code></a></div>
-                    <p>The first method returns the first element in the collection that passes a given truth test:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).first(function (item) {
+<blockquote>
+  <p>For the inverse of <code>filter</code>, see the <code>reject</code> method.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.21">3.21 <code>first()</code></a></div>
+<p>The first method returns the first element in the collection that passes a given truth test:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).first(function (item) {
   return item &gt; 1;
 });
 
 //=&gt; 2
 </code></pre>
-                    <p>You may also call the first method with no arguments to get the first element in the collection.
-                        If the collection is empty, null is returned:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).first();
+<p>You may also call the first method with no arguments to get the first element in the collection. If the collection is empty, null is returned:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).first();
 
 //=&gt; 1
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.22">3.22 <code>firstWhere()</code></a></div>
-                    <p>The firstWhere method returns the first element in the collection with the given key / value
-                        pair:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.22">3.22 <code>firstWhere()</code></a></div>
+<p>The firstWhere method returns the first element in the collection with the given key / value pair:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
     {name: 'Regena', age: 12},
     {name: 'Linda', age: 14},
     {name: 'Diego', age: 23},
@@ -534,11 +496,9 @@ collection.firstWhere('name', 'Linda');
 
 //=&gt; { name: 'Linda', age: 14 }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.23">3.23 <code>flatMap()</code></a></div>
-                    <p>The flatMap method iterates through the collection and passes each value to the given callback.
-                        The callback is free to modify the item and return it, thus forming a new collection of modified
-                        items. Then, the array is flattened by a level:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.23">3.23 <code>flatMap()</code></a></div>
+<p>The flatMap method iterates through the collection and passes each value to the given callback. The callback is free to modify the item and return it, thus forming a new collection of modified items. Then, the array is flattened by a level:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
  { name: 'Robbie Fowler' },
  { nickname: 'The God' },
  { position: 'Striker' },
@@ -554,9 +514,9 @@ flatMapped.all();
 //=&gt;   position: 'STRIKER'
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.24">3.24 <code>flatten()</code></a></div>
-                    <p>The flatten method flattens a multi-dimensional collection into a single dimension:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.24">3.24 <code>flatten()</code></a></div>
+<p>The flatten method flattens a multi-dimensional collection into a single dimension:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   club: 'Liverpool',
   players: ['Sturridge', 'Firmino', 'Coutinho']
 });
@@ -567,8 +527,8 @@ flattened.all();
 
 //=&gt; ['Liverpool', 'Sturridge', 'Firmino', 'Coutinho'];
 </code></pre>
-                    <p>You may optionally pass the function a "depth" argument:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<p>You may optionally pass the function a "depth" argument:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   Apple: [{
     name: 'iPhone 6S',
     brand: 'Apple'
@@ -588,12 +548,10 @@ flattened.all();
 //=&gt;   {name: 'Galaxy S7', brand: 'Samsung'}
 //=&gt; ]
 </code></pre>
-                    <p>In this example, calling flatten without providing the depth would have also flattened the nested
-                        arrays, resulting in <code>['iPhone 6S', 'Apple', 'Galaxy S7', 'Samsung']</code>. Providing a
-                        depth allows you to restrict the levels of nested arrays that will be flattened.</p>
-                    <div class="dsd_title_2"><a href="#top" id="3.25">3.25 <code>flip()</code></a></div>
-                    <p>The flip method swaps the collection's keys with their corresponding values:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<p>In this example, calling flatten without providing the depth would have also flattened the nested arrays, resulting in <code>['iPhone 6S', 'Apple', 'Galaxy S7', 'Samsung']</code>. Providing a depth allows you to restrict the levels of nested arrays that will be flattened.</p>
+<div class="dsd_title_2"><a href="#top"  id="3.25">3.25 <code>flip()</code></a></div>
+<p>The flip method swaps the collection's keys with their corresponding values:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   name: 'Steven Gerrard',
   number: 8
 });
@@ -607,9 +565,9 @@ flipped.all();
 //=&gt;   '8': 'number'
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.26">3.26 <code>forget()</code></a></div>
-                    <p>The forget method removes an item from the collection by its key:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.26">3.26 <code>forget()</code></a></div>
+<p>The forget method removes an item from the collection by its key:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   name: 'Steven Gerrard',
   number: 8
 });
@@ -622,15 +580,12 @@ collection.all();
 //=&gt;   name: 'Steven Gerrard'
 //=&gt; }
 </code></pre>
-                    <blockquote>
-                        <p>Unlike most other collection methods, forget does not return a new modified collection; it
-                            modifies the collection it is called on.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.27">3.27 <code>forPage()</code></a></div>
-                    <p>The forPage method returns a new collection containing the items that would be present on a given
-                        page number. The method accepts the page number as its first argument and the number of items to
-                        show per page as its second argument:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+<blockquote>
+  <p>Unlike most other collection methods, forget does not return a new modified collection; it modifies the collection it is called on.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.27">3.27 <code>forPage()</code></a></div>
+<p>The forPage method returns a new collection containing the items that would be present on a given page number. The method accepts the page number as its first argument and the number of items to show per page as its second argument:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
 const forPage = collection.forPage(2, 3);
 
@@ -638,10 +593,9 @@ forPage.all();
 
 //=&gt; [4, 5, 6]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.28">3.28 <code>get()</code></a></div>
-                    <p>The get method returns the item at a given key. If the key does not exist, <code>null</code> is
-                        returned:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.28">3.28 <code>get()</code></a></div>
+<p>The get method returns the item at a given key. If the key does not exist, <code>null</code> is returned:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   firstname: 'Chuck',
   lastname: 'Norris'
 });
@@ -653,8 +607,8 @@ collection.get('lastname');
 collection.get('middlename');
 //=&gt; null
 </code></pre>
-                    <p>You may optionally pass a default value as the second argument:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<p>You may optionally pass a default value as the second argument:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   firstname: 'Chuck',
   lastname: 'Norris'
 });
@@ -662,9 +616,8 @@ collection.get('middlename');
 collection.get('middlename', 'default-value');
 //=&gt; default-value
 </code></pre>
-                    <p>You may even pass a callback as the default value. The result of the callback will be returned if
-                        the specified key does not exist:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<p>You may even pass a callback as the default value. The result of the callback will be returned if the specified key does not exist:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   firstname: 'Chuck',
   lastname: 'Norris'
 });
@@ -675,9 +628,9 @@ collection.get('middlename', function () {
 
 //=&gt; default-value
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.29">3.29 <code>groupBy()</code></a></div>
-                    <p>The groupBy method groups the collection's items by a given key:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.29">3.29 <code>groupBy()</code></a></div>
+<p>The groupBy method groups the collection's items by a given key:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {
     product: 'Chair',
     manufacturer: 'IKEA'
@@ -721,9 +674,8 @@ grouped.all();
 //=&gt;   ]
 //=&gt; }
 </code></pre>
-                    <p>In addition to passing a string key, you may also pass a callback. The callback should return the
-                        value you wish to key the group by:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<p>In addition to passing a string key, you may also pass a callback. The callback should return the value you wish to key the group by:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {
     product: 'Chair',
     manufacturer: 'IKEA'
@@ -769,9 +721,9 @@ grouped.all();
 //=&gt;   ]
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.30">3.30 <code>has()</code></a></div>
-                    <p>The has method determines if one or more keys exists in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.30">3.30 <code>has()</code></a></div>
+<p>The has method determines if one or more keys exists in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   animal: 'unicorn',
   ability: 'magical'
 });
@@ -788,11 +740,9 @@ collection.has(['animal', 'ability', 'name']);
 
 //=&gt; false
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.31">3.31 <code>implode()</code></a></div>
-                    <p>The implode method joins the items in a collection. Its arguments depend on the type of items in
-                        the collection. If the collection contains arrays or objects, you should pass the key of the
-                        attributes you wish to join, and the "glue" string you wish to place between the values:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<div class="dsd_title_2"><a href="#top"  id="3.31">3.31 <code>implode()</code></a></div>
+<p>The implode method joins the items in a collection. Its arguments depend on the type of items in the collection. If the collection contains arrays or objects, you should pass the key of the attributes you wish to join, and the "glue" string you wish to place between the values:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
     product: 'Chair',
     manufacturer: 'IKEA',
   }, {
@@ -807,17 +757,14 @@ collection.implode('product', ',');
 
 //=&gt; Chair, Desk, Chair
 </code></pre>
-                    <p>If the collection contains simple strings or numeric values, simply pass the "glue" as the only
-                        argument to the method:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4, 5]).implode('-');
+<p>If the collection contains simple strings or numeric values, simply pass the "glue" as the only argument to the method:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4, 5]).implode('-');
 
 //=&gt; 1-2-3-4-5
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.32">3.32 <code>intersect()</code></a></div>
-                    <p>The intersect method removes any values from the original collection that are not present in the
-                        given <code>array</code> or <code>collection</code>. The resulting collection will preserve the
-                        original collection's keys:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.32">3.32 <code>intersect()</code></a></div>
+<p>The intersect method removes any values from the original collection that are not present in the given <code>array</code> or <code>collection</code>. The resulting collection will preserve the original collection's keys:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 intersect = collection.intersect([1, 2, 3, 9]);
 
@@ -825,10 +772,9 @@ intersect.all();
 
 //=&gt; [1, 2, 3]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.33">3.33 <code>intersectByKeys()</code></a></div>
-                    <p>The intersectByKeys method removes any keys from the original collection that are not present in
-                        the given <code>array</code> or collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.33">3.33 <code>intersectByKeys()</code></a></div>
+<p>The intersectByKeys method removes any keys from the original collection that are not present in the given <code>array</code> or collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
     serial: 'UX301',
     type: 'screen',
     year: 2009,
@@ -844,7 +790,7 @@ intersect.all();
 
 // ['type' =&gt; 'screen', 'year' =&gt; 2009]
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">const firstCollection = collect([1, 2, 3, 4, 5]);
+<pre class="prettyprint"><code class="js language-js">const firstCollection = collect([1, 2, 3, 4, 5]);
 const secondCollection = collect([1, 2, 3, 9]);
 
 intersect = firstCollection.intersect(secondCollection);
@@ -853,23 +799,21 @@ intersect.all();
 
 //=&gt; [1, 2, 3]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.34">3.34 <code>isEmpty()</code></a></div>
-                    <p>The isEmpty method returns true if the collection is empty; otherwise, false is returned:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([]).isEmpty();
+<div class="dsd_title_2"><a href="#top"  id="3.34">3.34 <code>isEmpty()</code></a></div>
+<p>The isEmpty method returns true if the collection is empty; otherwise, false is returned:</p>
+<pre class="prettyprint"><code class="js language-js">collect([]).isEmpty();
 
 //=&gt;  true
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.35">3.35 <code>isNotEmpty()</code></a></div>
-                    <p>The isNotEmpty method returns true if the collection is not empty; otherwise, false is
-                        returned:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3]).isNotEmpty();
+<div class="dsd_title_2"><a href="#top"  id="3.35">3.35 <code>isNotEmpty()</code></a></div>
+<p>The isNotEmpty method returns true if the collection is not empty; otherwise, false is returned:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3]).isNotEmpty();
 
 //=&gt;  true
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.36">3.36 <code>keyBy()</code></a></div>
-                    <p>The keyBy method keys the collection by the given key. If multiple items have the same key, only
-                        the last one will appear in the new collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.36">3.36 <code>keyBy()</code></a></div>
+<p>The keyBy method keys the collection by the given key. If multiple items have the same key, only the last one will appear in the new collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {
     product: 'Chair',
     manufacturer: 'IKEA'
@@ -897,9 +841,8 @@ keyed.all();
 //=&gt;   }
 //=&gt; }
 </code></pre>
-                    <p>You may also pass a callback to the method. The callback should return the value to key the
-                        collection by:</p>
-                    <pre class="prettyprint"><code class="js language-js">const keyedUpperCase = collection.keyBy(function (item) {
+<p>You may also pass a callback to the method. The callback should return the value to key the collection by:</p>
+<pre class="prettyprint"><code class="js language-js">const keyedUpperCase = collection.keyBy(function (item) {
   return item['manufacturer'].toUpperCase();
 });
 
@@ -916,9 +859,9 @@ keyedUpperCase.all();
 //=&gt;   }
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.37">3.37 <code>keys()</code></a></div>
-                    <p>The keys method returns all of the collection's keys:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<div class="dsd_title_2"><a href="#top"  id="3.37">3.37 <code>keys()</code></a></div>
+<p>The keys method returns all of the collection's keys:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
   name: 'Steven Gerrard',
   number: 8
 }, {
@@ -930,9 +873,9 @@ keys = collection.keys();
 
 //=&gt; ['name', 'number', 'club', 'nickname']
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.38">3.38 <code>last()</code></a></div>
-                    <p>The last method returns the last element in the collection that passes a given truth test:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.38">3.38 <code>last()</code></a></div>
+<p>The last method returns the last element in the collection that passes a given truth test:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 const last = collection.last(function (item) {
   return item &gt; 1;
@@ -940,15 +883,14 @@ const last = collection.last(function (item) {
 
 //=&gt; 3
 </code></pre>
-                    <p>You may also call the last method with no arguments to get the last element in the collection. If
-                        the collection is empty, null is returned:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).last();
+<p>You may also call the last method with no arguments to get the last element in the collection. If the collection is empty, null is returned:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).last();
 
 //=&gt; 4
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.39">3.39 <code>macro()</code></a></div>
-                    <p>The macro method lets you register custom methods</p>
-                    <pre class="prettyprint"><code class="js language-js">collect().macro('uppercase', function () {
+<div class="dsd_title_2"><a href="#top"  id="3.39">3.39 <code>macro()</code></a></div>
+<p>The macro method lets you register custom methods</p>
+<pre class="prettyprint"><code class="js language-js">collect().macro('uppercase', function () {
   return this.map(function (item) {
     return item.toUpperCase();
   });
@@ -962,15 +904,12 @@ collection.all();
 
 //=&gt; ['A', 'B', 'C']
 </code></pre>
-                    <blockquote>
-                        <p>Note that the <code>macro</code> method returns <code>undefined</code>, and therefore it is
-                            not possible to use it within a chain of methods.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.40">3.40 <code>map()</code></a></div>
-                    <p>The map method iterates through the collection and passes each value to the given callback. The
-                        callback is free to modify the item and return it, thus forming a new collection of modified
-                        items:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<blockquote>
+  <p>Note that the <code>macro</code> method returns <code>undefined</code>, and therefore it is not possible to use it within a chain of methods.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.40">3.40 <code>map()</code></a></div>
+<p>The map method iterates through the collection and passes each value to the given callback. The callback is free to modify the item and return it, thus forming a new collection of modified items:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const multiplied = collection.map(function (item) {
   return item * 2;
@@ -980,15 +919,12 @@ multiplied.all();
 
 //=&gt; [2, 4, 6, 8, 10]
 </code></pre>
-                    <blockquote>
-                        <p>Like most other collection methods, <code>map</code> returns a new collection instance; it
-                            does not modify the collection it is called on. If you want to transform the original
-                            collection, use the <code>transform</code> method.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.41">3.41 <code>mapInto()</code></a></div>
-                    <p>The mapInto method iterates through the collection and instantiates the given class with each
-                        element as a constructor:</p>
-                    <pre class="prettyprint"><code class="js language-js">const Player = function (name) {
+<blockquote>
+  <p>Like most other collection methods, <code>map</code> returns a new collection instance; it does not modify the collection it is called on. If you want to transform the original collection, use the <code>transform</code> method.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.41">3.41 <code>mapInto()</code></a></div>
+<p>The mapInto method iterates through the collection and instantiates the given class with each element as a constructor:</p>
+<pre class="prettyprint"><code class="js language-js">const Player = function (name) {
   this.name = name;
 };
 
@@ -1006,12 +942,10 @@ players.all();
 //=&gt;   Player { name: 'Sadio Mané' },
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.42">3.42 <code>mapSpread()</code></a></div>
-                    <p>The mapSpread method iterates over the collection's items, passing each nested item value into
-                        the given callback.
-                        The callback is free to modify the item and return it, thus forming a new collection of modified
-                        items:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+<div class="dsd_title_2"><a href="#top"  id="3.42">3.42 <code>mapSpread()</code></a></div>
+<p>The mapSpread method iterates over the collection's items, passing each nested item value into the given callback.
+The callback is free to modify the item and return it, thus forming a new collection of modified items:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
 const chunks = collection.chunk(2);
 
@@ -1023,10 +957,10 @@ sequence.all();
 
 //=&gt; [1, 5, 9, 13, 17]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.43">3.43 <code>mapToDictionary()</code></a></div>
-                    <p>Run a dictionary map over the items.
-                        The callback should return an associative array with a single key/value pair.</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.43">3.43 <code>mapToDictionary()</code></a></div>
+<p>Run a dictionary map over the items.
+The callback should return an associative array with a single key/value pair.</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   { id: 1, name: 'a' },
   { id: 2, name: 'b' },
   { id: 3, name: 'c' },
@@ -1043,10 +977,9 @@ groups.all();
 //=&gt;   c: [3],
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.44">3.44 <code>mapToGroups()</code></a></div>
-                    <p>The mapToGroups method iterates through the collection and passes each value to the given
-                        callback:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.44">3.44 <code>mapToGroups()</code></a></div>
+<p>The mapToGroups method iterates through the collection and passes each value to the given callback:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   { id: 1, name: 'A' },
   { id: 2, name: 'B' },
   { id: 3, name: 'C' },
@@ -1063,11 +996,9 @@ const groups = collection.mapToGroups(function (item, key) {
 //=&gt;   C: [3],
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.45">3.45 <code>mapWithKeys()</code></a></div>
-                    <p>The mapWithKeys method iterates through the collection and passes each value to the given
-                        callback. The callback should return an array where the first element represents the key and the
-                        second element represents the value pair:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<div class="dsd_title_2"><a href="#top"  id="3.45">3.45 <code>mapWithKeys()</code></a></div>
+<p>The mapWithKeys method iterates through the collection and passes each value to the given callback. The callback should return an array where the first element represents the key and the second element represents the value pair:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
     'name': 'John',
     'department': 'Sales',
     'email': 'john@example.com'
@@ -1088,9 +1019,9 @@ keyed.all();
 //=&gt;   'jane@example.com': 'Jane',
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.46">3.46 <code>max()</code></a></div>
-                    <p>The max method returns the maximum value of a given key:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<div class="dsd_title_2"><a href="#top"  id="3.46">3.46 <code>max()</code></a></div>
+<p>The max method returns the maximum value of a given key:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
   value: 10
 }, {
   value: -13
@@ -1104,17 +1035,17 @@ const max = collection.max('value');
 
 //=&gt; 12
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">collect([-1, -2345, 12, 11, 3]).max();
+<pre class="prettyprint"><code class="js language-js">collect([-1, -2345, 12, 11, 3]).max();
 
 //=&gt; 12
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.47">3.47 <code>median()</code></a></div>
-                    <p>The median method returns the median value of a given key:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 3, 3, 6, 7, 8, 9]).median();
+<div class="dsd_title_2"><a href="#top"  id="3.47">3.47 <code>median()</code></a></div>
+<p>The median method returns the median value of a given key:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 3, 3, 6, 7, 8, 9]).median();
 
 //=&gt; 6
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">collect([{
+<pre class="prettyprint"><code class="js language-js">collect([{
   foo: 1
 }, {
   foo: 1
@@ -1126,11 +1057,9 @@ const max = collection.max('value');
 
 //=&gt; 1.5
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.48">3.48 <code>merge()</code></a></div>
-                    <p>The merge method merges the given object into the original collection. If a key in the given
-                        object matches a key in the original collection, the given objects value will overwrite the
-                        value in the original collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.48">3.48 <code>merge()</code></a></div>
+<p>The merge method merges the given object into the original collection. If a key in the given object matches a key in the original collection, the given objects value will overwrite the value in the original collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   id: 1,
   price: 29
 });
@@ -1144,8 +1073,8 @@ merged.all();
 
 //=&gt; {id: 1, price: 400, discount: false}
 </code></pre>
-                    <p>If our collection is an array, the values will be appended to the end of the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect(['Unicorn', 'Rainbow']);
+<p>If our collection is an array, the values will be appended to the end of the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect(['Unicorn', 'Rainbow']);
 
 const merged = collection.merge(['Sunshine', 'Rainbow']);
 
@@ -1153,9 +1082,9 @@ merged.all();
 
 //=&gt; ['Unicorn', 'Rainbow', 'Sunshine', 'Rainbow']
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.49">3.49 <code>min()</code></a></div>
-                    <p>The min method returns the minimum value of a given key:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect[{
+<div class="dsd_title_2"><a href="#top"  id="3.49">3.49 <code>min()</code></a></div>
+<p>The min method returns the minimum value of a given key:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect[{
   worth: 100
 }, {
   worth: 900
@@ -1167,17 +1096,17 @@ collection.min('worth');
 
 //=&gt; 79
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4, 5]).min();
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4, 5]).min();
 
 //=&gt; 1
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.50">3.50 <code>mode()</code></a></div>
-                    <p>The mode method returns the mode value of a given key:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 3, 3, 6, 7, 8, 9]).mode();
+<div class="dsd_title_2"><a href="#top"  id="3.50">3.50 <code>mode()</code></a></div>
+<p>The mode method returns the mode value of a given key:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 3, 3, 6, 7, 8, 9]).mode();
 
 //=&gt; [3]
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">collect([{
+<pre class="prettyprint"><code class="js language-js">collect([{
   foo: 1
 }, {
   foo: 1
@@ -1189,9 +1118,9 @@ collection.min('worth');
 
 //=&gt; [1]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.51">3.51 <code>nth()</code></a></div>
-                    <p>The nth method creates a new collection consisting of every n-th element:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect(['a', 'b', 'c', 'd', 'e', 'f']);
+<div class="dsd_title_2"><a href="#top"  id="3.51">3.51 <code>nth()</code></a></div>
+<p>The nth method creates a new collection consisting of every n-th element:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect(['a', 'b', 'c', 'd', 'e', 'f']);
 
 const nth = collection.nth(4);
 
@@ -1199,9 +1128,9 @@ nth.all();
 
 //=&gt; ['a', 'e']
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.52">3.52 <code>only()</code></a></div>
-                    <p>The only method returns the items in the collection with the specified keys:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.52">3.52 <code>only()</code></a></div>
+<p>The only method returns the items in the collection with the specified keys:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   id: 12,
   name: 'John Doe',
   email: 'john@doe.com',
@@ -1214,21 +1143,18 @@ filtered.all();
 
 //=&gt; {name: 'John Doe', email: 'john@doe.com'}
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).only([2, 12]).all();
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3, 4]).only([2, 12]).all();
 
 //=&gt; [2]
 </code></pre>
-                    <blockquote>
-                        <p>For the inverse of <code>only</code>, see the <code>except</code> method.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.53">3.53 <code>pad()</code></a></div>
-                    <p>The pad method will fill the array with the given value until the array reaches the specified
-                        size. This method
-                        behaves like the <a href="https://secure.php.net/manual/en/function.array-pad.php">array_pad</a>
-                        PHP function.</p>
-                    <p>To pad to the left, you should specify a negative size. No padding will take place if the
-                        absolute value of the given size is less than or equal to the length of the array:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect(['A', 'B', 'C']);
+<blockquote>
+  <p>For the inverse of <code>only</code>, see the <code>except</code> method.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.53">3.53 <code>pad()</code></a></div>
+<p>The pad method will fill the array with the given value until the array reaches the specified size. This method 
+behaves like the <a href="https://secure.php.net/manual/en/function.array-pad.php">array_pad</a> PHP function.</p>
+<p>To pad to the left, you should specify a negative size. No padding will take place if the absolute value of the given size is less than or equal to the length of the array:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect(['A', 'B', 'C']);
 
 let filtered = collection.pad(5, 0);
 
@@ -1242,18 +1168,17 @@ filtered.all();
 
 //=&gt; [0, 0, 'A', 'B', 'C']
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.54">3.54 <code>partition()</code></a></div>
-                    <p>The partition method may be combined with destructuring to separate elements that pass a given
-                        truth test from those that do not:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6]);
+<div class="dsd_title_2"><a href="#top"  id="3.54">3.54 <code>partition()</code></a></div>
+<p>The partition method may be combined with destructuring to separate elements that pass a given truth test from those that do not:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6]);
 
 const [underThree, overThree] = collection.partition(function (i) {
   return i &lt; 3;
 });
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.55">3.55 <code>pipe()</code></a></div>
-                    <p>The pipe method passes the collection to the given callback and returns the result:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.55">3.55 <code>pipe()</code></a></div>
+<p>The pipe method passes the collection to the given callback and returns the result:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 const piped = collection.pipe(function (collection) {
   return collection.sum();
@@ -1261,9 +1186,9 @@ const piped = collection.pipe(function (collection) {
 
 //=&gt; 6
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.56">3.56 <code>pluck()</code></a></div>
-                    <p>The pluck method retrieves all of the values for a given key:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<div class="dsd_title_2"><a href="#top"  id="3.56">3.56 <code>pluck()</code></a></div>
+<p>The pluck method retrieves all of the values for a given key:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
   id: 78,
   name: 'Aeron'
 }, {
@@ -1277,8 +1202,8 @@ plucked.all();
 
 //=&gt; ['Aeron', 'Embody']
 </code></pre>
-                    <p>You may also specify how you wish the resulting collection to be keyed:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([{
+<p>You may also specify how you wish the resulting collection to be keyed:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([{
   id: 78,
   name: 'Aeron'
 }, {
@@ -1295,9 +1220,9 @@ plucked.all();
 //=&gt;   79: 'Embody'
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.57">3.57 <code>pop()</code></a></div>
-                    <p>The pop method removes and returns the last item from the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.57">3.57 <code>pop()</code></a></div>
+<p>The pop method removes and returns the last item from the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 collection.pop();
 
@@ -1307,9 +1232,9 @@ collection.all();
 
 // =&gt; [1, 2, 3, 4]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.58">3.58 <code>prepend()</code></a></div>
-                    <p>The prepend method adds an item to the beginning of the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.58">3.58 <code>prepend()</code></a></div>
+<p>The prepend method adds an item to the beginning of the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 collection.prepend(0);
 
@@ -1317,13 +1242,11 @@ collection.all();
 
 //=&gt; [0, 1, 2, 3, 4, 5]
 </code></pre>
-                    <p>You may also pass a second argument to set the key of the prepended item:</p>
-                    <blockquote>
-                        <p>Pro tip: Order of properties in objects is not guaranteed in JavaScript; When calling prepend
-                            with a key, the Collection uses the underlying <code>put</code> method behind the scenes.
-                            This is only supported so that collect.js have the same api as Laravel Collections.</p>
-                    </blockquote>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<p>You may also pass a second argument to set the key of the prepended item:</p>
+<blockquote>
+  <p>Pro tip: Order of properties in objects is not guaranteed in JavaScript; When calling prepend with a key, the Collection uses the underlying <code>put</code> method behind the scenes. This is only supported so that collect.js have the same api as Laravel Collections.</p>
+</blockquote>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   product: 'iPhone 6s'
 });
 
@@ -1336,9 +1259,9 @@ collection.all():
 //=&gt;   product: 'iPhone 6s'
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.59">3.59 <code>pull()</code></a></div>
-                    <p>The pull method removes and returns an item from the collection by its key:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.59">3.59 <code>pull()</code></a></div>
+<p>The pull method removes and returns an item from the collection by its key:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   firstname: 'Michael',
   lastname: 'Cera'
 });
@@ -1351,9 +1274,9 @@ collection.all();
 
 //=&gt; {firstname: 'Michael'}
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.60">3.60 <code>push()</code></a></div>
-                    <p>The push method appends an item to the end of the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
+<div class="dsd_title_2"><a href="#top"  id="3.60">3.60 <code>push()</code></a></div>
+<p>The push method appends an item to the end of the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
 
 collection.push(5);
 
@@ -1361,9 +1284,9 @@ collection.all();
 
 //=&gt; [1, 2, 3, 4, 5]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.61">3.61 <code>put()</code></a></div>
-                    <p>The put method sets the given key and value in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect(['JavaScript', 'Python']);
+<div class="dsd_title_2"><a href="#top"  id="3.61">3.61 <code>put()</code></a></div>
+<p>The put method sets the given key and value in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect(['JavaScript', 'Python']);
 
 collection.put('Ruby');
 
@@ -1371,24 +1294,22 @@ collection.all();
 
 //=&gt; ['JavaScript', 'Python', 'Ruby']
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.62">3.62 <code>random()</code></a></div>
-                    <p>The random method returns a random item from the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.62">3.62 <code>random()</code></a></div>
+<p>The random method returns a random item from the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 collection.random();
 
 //=&gt; 4 (retrieved randomly)
 </code></pre>
-                    <p>You may optionally pass an integer to random to specify how many items you would like to randomly
-                        retrieve. If that integer is more than 1, a collection of items is returned:</p>
-                    <pre class="prettyprint"><code class="js language-js">const random = collection.random(3);
+<p>You may optionally pass an integer to random to specify how many items you would like to randomly retrieve. If that integer is more than 1, a collection of items is returned:</p>
+<pre class="prettyprint"><code class="js language-js">const random = collection.random(3);
 
 //=&gt; [5, 3, 4] (retrieved randomly)
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.63">3.63 <code>reduce()</code></a></div>
-                    <p>The reduce method reduces the collection to a single value, passing the result of each iteration
-                        into the subsequent iteration:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.63">3.63 <code>reduce()</code></a></div>
+<p>The reduce method reduces the collection to a single value, passing the result of each iteration into the subsequent iteration:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 const total = collection.reduce(function (carry, item) {
   return carry + item;
@@ -1396,18 +1317,16 @@ const total = collection.reduce(function (carry, item) {
 
 //=&gt; 6
 </code></pre>
-                    <p>The value for <code>carry</code> on the first iteration is null; however, you may specify its
-                        initial value by passing a second argument to reduce:</p>
-                    <pre class="prettyprint"><code class="js language-js">const total = collection.reduce(function (carry, item) {
+<p>The value for <code>carry</code> on the first iteration is null; however, you may specify its initial value by passing a second argument to reduce:</p>
+<pre class="prettyprint"><code class="js language-js">const total = collection.reduce(function (carry, item) {
   return carry + item;
 }, 4);
 
 //=&gt; 10
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.64">3.64 <code>reject()</code></a></div>
-                    <p>The reject method filters the collection using the given callback. The callback should return
-                        true if the item should be removed from the resulting collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
+<div class="dsd_title_2"><a href="#top"  id="3.64">3.64 <code>reject()</code></a></div>
+<p>The reject method filters the collection using the given callback. The callback should return true if the item should be removed from the resulting collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4]);
 
 const filtered = collection.reject(function (value) {
   return value &gt; 2;
@@ -1415,12 +1334,12 @@ const filtered = collection.reject(function (value) {
 
 //=&gt; [1, 2]
 </code></pre>
-                    <blockquote>
-                        <p>For the inverse of the <code>reject</code> method, see the <code>filter</code> method.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.65">3.65 <code>reverse()</code></a></div>
-                    <p>The reverse method reverses the order of the collection's items:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<blockquote>
+  <p>For the inverse of the <code>reject</code> method, see the <code>filter</code> method.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.65">3.65 <code>reverse()</code></a></div>
+<p>The reverse method reverses the order of the collection's items:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const reversed = collection.reverse();
 
@@ -1428,33 +1347,29 @@ reversed.all();
 
 //=&gt; [5, 4, 3, 2, 1]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.66">3.66 <code>search()</code></a></div>
-                    <p>The search method searches the collection for the given value and returns its key if found. If
-                        the item is not found, false is returned.</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([2, 4, 6, 8]);
+<div class="dsd_title_2"><a href="#top"  id="3.66">3.66 <code>search()</code></a></div>
+<p>The search method searches the collection for the given value and returns its key if found. If the item is not found, false is returned.</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([2, 4, 6, 8]);
 
 collection.search(4);
 
 //=&gt; 1
 </code></pre>
-                    <p>The search is done using a "loose" comparison, meaning a string with an integer value will be
-                        considered equal to an integer of the same value. To use strict comparison, pass true as the
-                        second argument to the method:</p>
-                    <pre class="prettyprint"><code class="js language-js">collection.search('4', true);
+<p>The search is done using a "loose" comparison, meaning a string with an integer value will be considered equal to an integer of the same value. To use strict comparison, pass true as the second argument to the method:</p>
+<pre class="prettyprint"><code class="js language-js">collection.search('4', true);
 
 //=&gt; false
 </code></pre>
-                    <p>Alternatively, you may pass in your own callback to search for the first item that passes your
-                        truth test:</p>
-                    <pre class="prettyprint"><code class="js language-js">collection.search(function (item, key) {
+<p>Alternatively, you may pass in your own callback to search for the first item that passes your truth test:</p>
+<pre class="prettyprint"><code class="js language-js">collection.search(function (item, key) {
   return item &gt; 5;
 });
 
 //=&gt; 2
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.67">3.67 <code>shift()</code></a></div>
-                    <p>The shift method removes and returns the first item from the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.67">3.67 <code>shift()</code></a></div>
+<p>The shift method removes and returns the first item from the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 collection.shift();
 
@@ -1464,9 +1379,9 @@ collection.all();
 
 //=&gt; [2, 3, 4, 5]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.68">3.68 <code>shuffle()</code></a></div>
-                    <p>The shuffle method randomly shuffles the items in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.68">3.68 <code>shuffle()</code></a></div>
+<p>The shuffle method randomly shuffles the items in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const shuffled = collection.shuffle();
 
@@ -1474,9 +1389,9 @@ shuffled.all();
 
 //=&gt; [3, 5, 1, 2, 4] (generated randomly)
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.69">3.69 <code>slice()</code></a></div>
-                    <p>The slice method returns a slice of the collection starting at the given index:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+<div class="dsd_title_2"><a href="#top"  id="3.69">3.69 <code>slice()</code></a></div>
+<p>The slice method returns a slice of the collection starting at the given index:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 const slice = collection.slice(4);
 
@@ -1484,17 +1399,16 @@ slice.all();
 
 //=&gt; [5, 6, 7, 8, 9, 10]
 </code></pre>
-                    <p>If you would like to limit the size of the returned slice, pass the desired size as the second
-                        argument to the method:</p>
-                    <pre class="prettyprint"><code class="js language-js">const slice = collection.slice(4, 2);
+<p>If you would like to limit the size of the returned slice, pass the desired size as the second argument to the method:</p>
+<pre class="prettyprint"><code class="js language-js">const slice = collection.slice(4, 2);
 
 slice.all();
 
 //=&gt; [5, 6]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.70">3.70 <code>sort()</code></a></div>
-                    <p>The sort method sorts the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([5, 3, 1, 2, 4]);
+<div class="dsd_title_2"><a href="#top"  id="3.70">3.70 <code>sort()</code></a></div>
+<p>The sort method sorts the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([5, 3, 1, 2, 4]);
 
 const sorted = collection.sort();
 
@@ -1502,11 +1416,10 @@ sorted.all();
 
 //=&gt; [1, 2, 3, 4, 5]
 </code></pre>
-                    <blockquote>
-                        <p>If your sorting needs are more advanced, you may pass a callback to sort with your own
-                            algorithm.</p>
-                    </blockquote>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([5, 3, 1, 2, 4]);
+<blockquote>
+  <p>If your sorting needs are more advanced, you may pass a callback to sort with your own algorithm.</p>
+</blockquote>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([5, 3, 1, 2, 4]);
 
 const sorted = collection.sort(function (a, b) {
   return b - a;
@@ -1516,15 +1429,12 @@ sorted.all();
 
 //=&gt; [5, 4, 3, 2, 1]
 </code></pre>
-                    <blockquote>
-                        <p>If you need to sort a collection of nested arrays or objects, see the <code>sortBy</code> and
-                            <code>sortByDesc</code> methods.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.71">3.71 <code>sortBy()</code></a></div>
-                    <p>The sortBy method sorts the collection by the given key. The sorted collection keeps the original
-                        array keys, so in this example we'll use the values method to reset the keys to consecutively
-                        numbered indexes:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<blockquote>
+  <p>If you need to sort a collection of nested arrays or objects, see the <code>sortBy</code> and <code>sortByDesc</code> methods.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.71">3.71 <code>sortBy()</code></a></div>
+<p>The sortBy method sorts the collection by the given key. The sorted collection keeps the original array keys, so in this example we'll use the values method to reset the keys to consecutively numbered indexes:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {name: 'Desk', price: 200},
   {name: 'Chair', price: 100},
   {name: 'Bookcase', price: 150},
@@ -1540,8 +1450,8 @@ sorted.all();
 //=&gt;   {name: 'Desk', price: 200},
 //=&gt; ]
 </code></pre>
-                    <p>You can also pass your own callback to determine how to sort the collection values:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<p>You can also pass your own callback to determine how to sort the collection values:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {name: 'Desk', colors: ['Black', 'Mahogany']},
   {name: 'Chair', colors: ['Black']},
   {name: 'Bookcase', colors: ['Red', 'Beige', 'Brown']},
@@ -1559,12 +1469,11 @@ sorted.all();
 //=&gt;   {name: 'Bookcase', colors: ['Red', 'Beige', 'Brown']},
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.72">3.72 <code>sortByDesc()</code></a></div>
-                    <p>This method has the same signature as the <code>sortBy</code> method, but will sort the
-                        collection in the opposite order.</p>
-                    <div class="dsd_title_2"><a href="#top" id="3.73">3.73 <code>splice()</code></a></div>
-                    <p>The splice method removes and returns a slice of items starting at the specified index:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.72">3.72 <code>sortByDesc()</code></a></div>
+<p>This method has the same signature as the <code>sortBy</code> method, but will sort the collection in the opposite order.</p>
+<div class="dsd_title_2"><a href="#top"  id="3.73">3.73 <code>splice()</code></a></div>
+<p>The splice method removes and returns a slice of items starting at the specified index:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const chunk = collection.splice(2);
 
@@ -1576,8 +1485,8 @@ collection.all();
 
 //=&gt; [1, 2]
 </code></pre>
-                    <p>You may pass a second argument to limit the size of the resulting chunk:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<p>You may pass a second argument to limit the size of the resulting chunk:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const chunk = collection.splice(2, 1);
 
@@ -1589,17 +1498,16 @@ collection.all();
 
 //=&gt; [1, 2, 4, 5]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.74">3.74 <code>split()</code></a></div>
-                    <p>The split method breaks a collection into the given number of groups:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.74">3.74 <code>split()</code></a></div>
+<p>The split method breaks a collection into the given number of groups:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const groups = collection.split(3);
 
 //=&gt; [[1, 2], [3, 4], [5]]
 </code></pre>
-                    <p>In addition, you can pass a third argument containing the new items to replace the items removed
-                        from the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<p>In addition, you can pass a third argument containing the new items to replace the items removed from the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 const chunk = collection.splice(2, 1, [10, 11]);
 
@@ -1611,15 +1519,14 @@ collection.all();
 
 //=&gt; [1, 2, 10, 11, 4, 5]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.75">3.75 <code>sum()</code></a></div>
-                    <p>The sum method returns the sum of all items in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">collect([1, 2, 3]).sum();
+<div class="dsd_title_2"><a href="#top"  id="3.75">3.75 <code>sum()</code></a></div>
+<p>The sum method returns the sum of all items in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">collect([1, 2, 3]).sum();
 
 //=&gt; 6
 </code></pre>
-                    <p>If the collection contains nested arrays or objects, you should pass a key to use for determining
-                        which values to sum:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<p>If the collection contains nested arrays or objects, you should pass a key to use for determining which values to sum:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {name: 'JavaScript: The Good Parts', pages: 176},
   {name: 'JavaScript: The Definitive Guide', pages: 1096},
 ]);
@@ -1628,9 +1535,8 @@ collection.sum('pages');
 
 //=&gt; 1272
 </code></pre>
-                    <p>In addition, you may pass your own callback to determine which values of the collection to
-                        sum:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<p>In addition, you may pass your own callback to determine which values of the collection to sum:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {name: 'Desk', colors: ['Black', 'Mahogany']},
   {name: 'Chair', colors: ['Black']},
   {name: 'Bookcase', colors: ['Red', 'Beige', 'Brown']},
@@ -1642,11 +1548,10 @@ const total = collection.sum(function (product) {
 
 //=&gt; 6
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.76">3.76 <code>take()</code></a></div>
-                    <p>The take method returns a new collection with the specified number of items:
-                        You may also pass a negative integer to take the specified amount of items from the end of the
-                        collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([0, 1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.76">3.76 <code>take()</code></a></div>
+<p>The take method returns a new collection with the specified number of items:
+You may also pass a negative integer to take the specified amount of items from the end of the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([0, 1, 2, 3, 4, 5]);
 
 const chunk = collection.take(3);
 
@@ -1654,11 +1559,9 @@ chunk.all();
 
 //=&gt; [0, 1, 2]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.77">3.77 <code>tap()</code></a></div>
-                    <p>The tap method passes the collection to the given callback, allowing you to "tap" into the
-                        collection at a specific point and do something with the items while not affecting the
-                        collection itself:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collect([2, 4, 3, 1, 5])
+<div class="dsd_title_2"><a href="#top"  id="3.77">3.77 <code>tap()</code></a></div>
+<p>The tap method passes the collection to the given callback, allowing you to "tap" into the collection at a specific point and do something with the items while not affecting the collection itself:</p>
+<pre class="prettyprint"><code class="js language-js">const collect([2, 4, 3, 1, 5])
   .sort()
   .tap(function (collection) {
     console.log(collection.all());
@@ -1669,9 +1572,9 @@ chunk.all();
 
 //=&gt; 1
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.78">3.78 <code>times()</code></a></div>
-                    <p>The times method creates a new collection by invoking the callback a given amount of times:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect().times(10, function (number) {
+<div class="dsd_title_2"><a href="#top"  id="3.78">3.78 <code>times()</code></a></div>
+<p>The times method creates a new collection by invoking the callback a given amount of times:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect().times(10, function (number) {
   return number * 9;
 });
 
@@ -1679,16 +1582,16 @@ collection.all();
 
 //=&gt; [9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.79">3.79 <code>toArray()</code></a></div>
-                    <p>The toArray method converts the collection into a plain array.
-                        If the collection is an object, an array containing the values will be returned.</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 'b', 'c']);
+<div class="dsd_title_2"><a href="#top"  id="3.79">3.79 <code>toArray()</code></a></div>
+<p>The toArray method converts the collection into a plain array.
+If the collection is an object, an array containing the values will be returned.</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 'b', 'c']);
 
 collection.toArray();
 
 //=&gt; [1, 2, 3, 'b', 'c']
 </code></pre>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   name: 'Elon Musk',
   companies: [
     'Tesla',
@@ -1701,9 +1604,9 @@ collection.toArray();
 
 //=&gt; ['Elon Musk', ['Tesla', 'Space X', 'SolarCity']]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.80">3.80 <code>toJson()</code></a></div>
-                    <p>The toJson method converts the collection into JSON string:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<div class="dsd_title_2"><a href="#top"  id="3.80">3.80 <code>toJson()</code></a></div>
+<p>The toJson method converts the collection into JSON string:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   id: 384,
   name: 'Rayquaza',
   gender: 'NA'
@@ -1713,11 +1616,9 @@ const json = collection.toJson();
 
 //=&gt; {"id": 384, "name": "Rayquaza", "gender": "NA"}
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.81">3.81 <code>transform()</code></a></div>
-                    <p>The transform method iterates over the collection and calls the given callback with each item in
-                        the collection. The items in the collection will be replaced by the values returned by the
-                        callback:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
+<div class="dsd_title_2"><a href="#top"  id="3.81">3.81 <code>transform()</code></a></div>
+<p>The transform method iterates over the collection and calls the given callback with each item in the collection. The items in the collection will be replaced by the values returned by the callback:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3, 4, 5]);
 
 collection.transform(function (item, key) {
   return item * 2;
@@ -1727,14 +1628,12 @@ collection.all();
 
 //=&gt; [2, 4, 6, 8, 10]
 </code></pre>
-                    <blockquote>
-                        <p>Unlike most other collection methods, <code>transform</code> modifies the collection itself.
-                            If you wish to create a new collection instead, use the <code>map</code> method.</p>
-                    </blockquote>
-                    <div class="dsd_title_2"><a href="#top" id="3.82">3.82 <code>union()</code></a></div>
-                    <p>The union method adds the given array to the collection. If the given array contains keys that
-                        are already in the original collection, the original collection's values will be preferred:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({
+<blockquote>
+  <p>Unlike most other collection methods, <code>transform</code> modifies the collection itself. If you wish to create a new collection instead, use the <code>map</code> method.</p>
+</blockquote>
+<div class="dsd_title_2"><a href="#top"  id="3.82">3.82 <code>union()</code></a></div>
+<p>The union method adds the given array to the collection. If the given array contains keys that are already in the original collection, the original collection's values will be preferred:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({
   a: 'A',
   b: 'B'
 });
@@ -1753,9 +1652,9 @@ union.all();
 //=&gt;   c: 'CCC'
 //=&gt; }
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.83">3.83 <code>unique()</code></a></div>
-                    <p>The unique method returns all of the unique items in the collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 1, 1, 2, 3, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.83">3.83 <code>unique()</code></a></div>
+<p>The unique method returns all of the unique items in the collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 1, 1, 2, 3, 3]);
 
 const unique = collection.unique();
 
@@ -1763,8 +1662,8 @@ unique.all();
 
 //=&gt; [1, 2, 3]
 </code></pre>
-                    <p>When dealing with an array of objects, you may specify the key used to determine uniqueness:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<p>When dealing with an array of objects, you may specify the key used to determine uniqueness:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {name: 'iPhone 6', brand: 'Apple', type: 'phone'},
   {name: 'iPhone 5', brand: 'Apple', type: 'phone'},
   {name: 'Apple Watch', brand: 'Apple', type: 'watch'},
@@ -1781,8 +1680,8 @@ unique.all();
 //=&gt;   {name: 'Galaxy S6', brand: 'Samsung', type: 'phone'},
 //=&gt; ]
 </code></pre>
-                    <p>You may also pass your own callback to determine item uniqueness:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<p>You may also pass your own callback to determine item uniqueness:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {name: 'iPhone 6', brand: 'Apple', type: 'phone'},
   {name: 'iPhone 5', brand: 'Apple', type: 'phone'},
   {name: 'Apple Watch', brand: 'Apple', type: 'watch'},
@@ -1803,10 +1702,9 @@ unique.all();
 //=&gt;   {name: 'Galaxy Gear', brand: 'Samsung', type: 'watch'},
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.84">3.84 <code>unless()</code></a></div>
-                    <p>The unless method will execute the given callback when the first argument given to the method
-                        evaluates to false:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.84">3.84 <code>unless()</code></a></div>
+<p>The unless method will execute the given callback when the first argument given to the method evaluates to false:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 collection.unless(false, function (collection) {
   return collection.push(4);
@@ -1816,17 +1714,17 @@ collection.all();
 
 //=&gt; [1, 2, 3, 4]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.85">3.85 <code>unwrap()</code></a></div>
-                    <p>The unwrap method will unwrap the given collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.85">3.85 <code>unwrap()</code></a></div>
+<p>The unwrap method will unwrap the given collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 collect().unwrap(collection);
 
 //=&gt; [1, 2, 3]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.86">3.86 <code>values()</code></a></div>
-                    <p>The values method returns a new collection with the keys reset to consecutive integers:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect({a: 'xoxo', b: 'abab', 'c': '1337', 1337: 12});
+<div class="dsd_title_2"><a href="#top"  id="3.86">3.86 <code>values()</code></a></div>
+<p>The values method returns a new collection with the keys reset to consecutive integers:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect({a: 'xoxo', b: 'abab', 'c': '1337', 1337: 12});
 
 const values = collection.values();
 
@@ -1834,10 +1732,9 @@ values.all();
 
 //=&gt; [12, 'xoxo', 'abab', '1337']
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.89">3.89 <code>when()</code></a></div>
-                    <p>The when method will execute the given callback when the first argument given to the method
-                        evaluates to true:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.89">3.89 <code>when()</code></a></div>
+<p>The when method will execute the given callback when the first argument given to the method evaluates to true:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([1, 2, 3]);
 
 collection.when(true, function (collection) {
   return collection.push(4);
@@ -1847,9 +1744,9 @@ collection.all();
 
 //=&gt; [1, 2, 3, 4]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.90">3.90 <code>where()</code></a></div>
-                    <p>The where method filters the collection by a given key / value pair:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.90">3.90 <code>where()</code></a></div>
+<p>The where method filters the collection by a given key / value pair:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {product: 'Desk', price: 200},
   {product: 'Chair', price: 100},
   {product: 'Bookcase', price: 150},
@@ -1865,9 +1762,9 @@ filtered.all();
 //=&gt;   {product: 'Door', price: 100}
 //=&gt; ]
 </code></pre>
-                    <p>The where method also allows for custom comparisons:
-                        <strong>Non-identity / strict inequality <code>(!==)</code></strong></p>
-                    <pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '!==', 100);
+<p>The where method also allows for custom comparisons:
+<strong>Non-identity / strict inequality <code>(!==)</code></strong></p>
+<pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '!==', 100);
 
 filtered.all();
 
@@ -1876,15 +1773,15 @@ filtered.all();
 //=&gt;   {product: 'Bookcase', price: 150}
 //=&gt; ]
 </code></pre>
-                    <p><strong>Less than operator <code>(&lt;)</code></strong></p>
-                    <pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&lt;', 100);
+<p><strong>Less than operator <code>(&lt;)</code></strong></p>
+<pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&lt;', 100);
 
 filtered.all();
 
 //=&gt; []
 </code></pre>
-                    <p><strong>Less than or equal operator <code>(&lt;=)</code></strong></p>
-                    <pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&lt;=', 100);
+<p><strong>Less than or equal operator <code>(&lt;=)</code></strong></p>
+<pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&lt;=', 100);
 
 filtered.all();
 
@@ -1893,8 +1790,8 @@ filtered.all();
 //=&gt;   {product: 'Door', price: 100}
 //=&gt; ]
 </code></pre>
-                    <p><strong>Greater than operator <code>(&gt;)</code></strong></p>
-                    <pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&gt;', 100);
+<p><strong>Greater than operator <code>(&gt;)</code></strong></p>
+<pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&gt;', 100);
 
 filtered.all();
 
@@ -1903,8 +1800,8 @@ filtered.all();
 //=&gt;   {product: 'Bookcase', price: 150}
 //=&gt; ]
 </code></pre>
-                    <p><strong>Greater than or equal operator <code>(&gt;=)</code></strong></p>
-                    <pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&gt;=', 150);
+<p><strong>Greater than or equal operator <code>(&gt;=)</code></strong></p>
+<pre class="prettyprint"><code class="js language-js">const filtered = collection.where('price', '&gt;=', 150);
 
 filtered.all();
 
@@ -1913,10 +1810,9 @@ filtered.all();
 //=&gt;   {product: 'Bookcase', price: 150}
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.91">3.91 <code>whereIn()</code></a></div>
-                    <p>The whereIn method filters the collection by a given key / value contained within the given
-                        array.</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.91">3.91 <code>whereIn()</code></a></div>
+<p>The whereIn method filters the collection by a given key / value contained within the given array.</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   {product: 'Desk', price: 200},
   {product: 'Chair', price: 100},
   {product: 'Bookcase', price: 150},
@@ -1933,10 +1829,9 @@ filtered.all();
 //=&gt;   {product: 'Door', price: 100},
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.92">3.92 <code>whereNotIn()</code></a></div>
-                    <p>The whereNotIn method filters the collection by a given key / value not contained within the
-                        given array:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect([
+<div class="dsd_title_2"><a href="#top"  id="3.92">3.92 <code>whereNotIn()</code></a></div>
+<p>The whereNotIn method filters the collection by a given key / value not contained within the given array:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect([
   { product: 'Desk', price: 200 },
   { product: 'Chair', price: 100 },
   { product: 'Bookcase', price: 150 },
@@ -1952,18 +1847,17 @@ filtered.all();
 //=&gt;   { product: 'Door', price: 100 }
 //=&gt; ]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.93">3.93 <code>wrap()</code></a></div>
-                    <p>The wrap method will wrap the given value in a collection:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect().wrap([1, 2, 3]);
+<div class="dsd_title_2"><a href="#top"  id="3.93">3.93 <code>wrap()</code></a></div>
+<p>The wrap method will wrap the given value in a collection:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect().wrap([1, 2, 3]);
 
 collection.all();
 
 //=&gt; [1, 2, 3]
 </code></pre>
-                    <div class="dsd_title_2"><a href="#top" id="3.94">3.94 <code>zip()</code></a></div>
-                    <p>The zip method merges together the values of the given array with the values of the original
-                        collection at the corresponding index:</p>
-                    <pre class="prettyprint"><code class="js language-js">const collection = collect(['Chair', 'Desk']);
+<div class="dsd_title_2"><a href="#top"  id="3.94">3.94 <code>zip()</code></a></div>
+<p>The zip method merges together the values of the given array with the values of the original collection at the corresponding index:</p>
+<pre class="prettyprint"><code class="js language-js">const collection = collect(['Chair', 'Desk']);
 
 const zipped = collection.zip([100, 200]);
 
@@ -1971,12 +1865,10 @@ zipped.all();
 
 //=&gt; [['Chair', 100], ['Desk', 200]]
 </code></pre>
-                    <div class="dsd_title_1"><a href="#top" id="4"><h2>4 Contribute</h2></a></div>
-                    <p>PRs are welcomed to this project, and help is needed in order to keep up with the changes of
-                        Laravel Collections. If you want to improve the collection library, add functionality or improve
-                        the docs please feel free to submit a PR.</p>
-                    <div class="dsd_title_1"><a href="#top" id="5"><h2>5 License</h2></a></div>
-                    <p>MIT © <a href="http://danieleckermann.com">Daniel Eckermann</a></p>
+<div class="dsd_title_1"><a href="#top"  id="4"><h2>4 Contribute</h2></a></div>
+<p>PRs are welcomed to this project, and help is needed in order to keep up with the changes of Laravel Collections. If you want to improve the collection library, add functionality or improve the docs please feel free to submit a PR.</p>
+<div class="dsd_title_1"><a href="#top"  id="5"><h2>5 License</h2></a></div>
+<p>MIT © <a href="http://danieleckermann.com">Daniel Eckermann</a></p>
                 </div>
             </div>
         </div>
@@ -1987,9 +1879,9 @@ zipped.all();
     <script src="https://s13.cnzz.com/z_stat.php?id=1262474449&web_id=1262474449" language="JavaScript"></script>
 </div>
 
-<script src="http://collectjs.com/js/jquery-3.2.1.min.js"></script>
-<script src="http://collectjs.com/js/vendor/modernizr-custom.js"></script>
-<script src="http://collectjs.com/js/bootstrap.js"></script>
-<script src="http://collectjs.com/js/google-code-prettify/run_prettify.js"></script>
+<script src="http://localhost/js/jquery-3.2.1.min.js"></script>
+<script src="http://localhost/js/vendor/modernizr-custom.js"></script>
+<script src="http://localhost/js/bootstrap.js"></script>
+<script src="http://localhost/js/google-code-prettify/run_prettify.js"></script>
 </body>
 </html>
