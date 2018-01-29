@@ -1,40 +1,41 @@
 ![](../img/collectjs.jpg)
 
-> Convenient and dependency free wrapper for working with arrays and objects
+> 处理数组和对象的方便且无依赖性的包装类工具
 
-[![Travis](https://img.shields.io/travis/ecrmnn/collect.js/master.svg?style=flat-square)](https://travis-ci.org/ecrmnn/collect.js/builds)
-[![npm version](https://img.shields.io/npm/v/collect.js.svg?style=flat-square)](http://badge.fury.io/js/collect.js)
-[![npm downloads](https://img.shields.io/npm/dm/collect.js.svg?style=flat-square)](http://badge.fury.io/js/collect.js)
-[![npm license](https://img.shields.io/npm/l/collect.js.svg?style=flat-square)](http://badge.fury.io/js/collect.js)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg?style=flat-square)](https://github.com/ecrmnn/collect.js/blob/master/package.json)
-[![eslint](https://img.shields.io/badge/code_style-airbnb-blue.svg?style=flat-square)](https://github.com/airbnb/javascript)
 
-1 Installation
+[[Travis]](https://travis-ci.org/ecrmnn/collect.js/builds)
+[[npm version]](http://badge.fury.io/js/collect.js)
+[[npm downloads]](http://badge.fury.io/js/collect.js)
+[[npm license]](http://badge.fury.io/js/collect.js)
+[[PRs Welcome]](http://makeapullrequest.com)
+[[dependencies]](https://github.com/ecrmnn/collect.js/blob/master/package.json)
+[[eslint]](https://github.com/airbnb/javascript)
+
+1 安装
 ===
 ```bash
 npm install collect.js --save
 ```
 
-2 Tip
+2 提示
 ===
-Using Laravel as your backend? Collect.js offers an (almost) identical api to [Laravel Collections](https://laravel.com/docs/5.5/collections) 5.5. [See differences](#strictness-and-comparisons).
+使用Laravel作为你的后台? Collect.js 提供一个和Laravel(几乎)一样的api[Laravel Collections](https://laravel.com/docs/5.5/collections) 5.5. [查看区别](#strictness-and-comparisons).
 
 
-3 Strictness and comparisons
+3 严格与比较
 ===
-All comparisons in ``collect.js`` are done using strict equality. Using loose equality comparisons are generally frowned upon in JavaScript. Laravel only performs "loose" comparisons by default and offer several "strict" comparison methods. These methods have not been implemented in ``collect.js`` because all methods are strict by default. 
+``collect.js``中的所有比较都是用严格的相等。在JavaScript中使用松散的相等比较通常是不令人满意的。默认laravel只执行“宽松的”比较并提供一些“严格”的比较方法。``collect.js``中这些方法还没有实现，因为所有的方法都是严格默认的。
 
-#####  Methods that have not been implemented:
-- ~~``containsStrict``~~ use ``contains()``
-- ~~``uniqueStrict``~~ use ``unique()``
-- ~~``whereStrict``~~ use ``where()``
-- ~~``whereInStrict``~~ use ``whereIn()``
-- ~~``whereNotInStrict``~~ use ``whereNotIn()``
+#####  尚未实现的方法:
+- ~~``containsStrict``~~ 采用 ``contains()``
+- ~~``uniqueStrict``~~ 采用 ``unique()``
+- ~~``whereStrict``~~ 采用 ``where()``
+- ~~``whereInStrict``~~ 采用 ``whereIn()``
+- ~~``whereNotInStrict``~~ 采用 ``whereNotIn()``
 
 3.1 ``all()``
 ---
-The all method returns the underlying array represented by the collection:
+所有方法返回集合表示的底层数组：
 ```js
 collect([1, 2, 3]).all();
 
@@ -43,18 +44,18 @@ collect([1, 2, 3]).all();
 
 3.2 ``average()``
 ---
-Alias for the [``avg()``](#avg) method
+[``avg()``](#avg) 方法别名
 
 3.3 ``avg()``
 ---
-The avg method returns the average of all items in the collection:
+avg方法返回集合中所有对象的平均值：
 ```js
 collect([1, 3, 3, 7]).avg();
 
 //=> 3.5
 ```
 
-If the collection contains nested arrays or objects, you should pass a key to use for determining which values to calculate the average:
+如果集合包含嵌套数组或对象，则应传递一个键用于确定计算平均值的值：
 ```js
 const collection = collect([{
   name: 'JavaScript: The Good Parts', pages: 176
@@ -69,7 +70,8 @@ collection.avg('pages');
 
 3.4 ``chunk()``
 ---
-The chunk method breaks the collection into multiple, smaller collections of a given size:
+chunk方法将集合分解为给定大小的多个较小的集合：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5, 6, 7]);
 
@@ -81,7 +83,7 @@ chunks.all();
 ```
 3.5 ``collapse()``
 ---
-The collapse method collapses a collection of arrays into a single, flat collection:
+collapse方法将数组集合展开为成一个平面集合：
 ```js
 const collection = collect([[1], [{}, 5, {}], ['xoxo']]);
 
@@ -103,7 +105,8 @@ collapsed.all();
 ```
 3.6 ``combine()``
 ---
-The combine method combines the keys of the collection with the values of another array or collection:
+combine方法将集合的键与另一个数组或集合的值相结合：
+
 ```js
 const collection = collect(['name', 'number']);
 
@@ -119,9 +122,9 @@ combine.all();
 
 3.7 ``concat()``
 ---
-The concat method is used to merge two or more collections/arrays/objects:
+Concat方法合并两个或两个以上的集合/数组对象：
 
-*You can also ``concat()`` an array of objects, or a multidimensional array*
+*你也可以`concat()`对象数组或多维数组*
 
 ```js
 const collection = collect([1, 2, 3]);
@@ -140,7 +143,8 @@ collection.all();
 
 3.8 ``contains()``
 ---
-The contains method determines whether the collection contains a given item:
+contains方法确定集合是否包含给对象：
+
 ```js
 const collection = collect({
   name: 'Steven Gerrard',
@@ -153,14 +157,17 @@ collection.contains('name');
 collection.contains('age');
 //=> false
 ```
-You may also work with arrays
+
+同样作用与数组
 ```js
 const collection = collect([1, 2, 3]);
 
 collection.contains(3);
 //=> true
 ```
-You may also pass a key / value pair to the contains method, which will determine if the given pair exists in the collection:
+
+还可以将一个键/值对传递给contains方法，该方法将确定集合中是否存在给定的键值对：
+
 ```js
 const collection = collect({
   name: 'Steven Gerrard',
@@ -171,7 +178,7 @@ collection.contains('name', 'Steve Jobs');
 //=> false
 ```
 
-Finally, you may also pass a callback to the contains method to perform your own truth test:
+还可以将回调传递给contains方法来执行自己的真实性测试：
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -184,7 +191,7 @@ collection.contains(function (value, key) {
 
 3.9 ``count()``
 ---
-The count method returns the total number of items in the collection:
+count方法返回集合中项目的总数：
 ```js
 const collection = collect([1, 2, 3, 4]);
 
@@ -195,7 +202,8 @@ collection.count();
 
 3.10 ``crossJoin()``
 ---
-The crossJoin method cross joins the collection with the given array or collection, returning all possible permutations:
+crossjoin方法交叉联接给定的数组或集合，返回的所有可能的排列集合：
+
 ```js
 const collection = collect([1, 2]);
 
@@ -213,7 +221,8 @@ collection.all();
 
 3.11 ``dd()``
 ---
-The dd method will console.log the collection and exit the current process:
+dd方法对集合执行console.log方法并退出当前的进程：
+
 ```js
 const collection = collect([1, 2, 3]).dd();
 
@@ -223,7 +232,8 @@ const collection = collect([1, 2, 3]).dd();
 
 3.12 ``diff()``
 ---
-The diff method compares the collection against another collection or a plain array based on its values. This method will return the values in the original collection that are not present in the given collection:
+diff方法根据其值将集合与另一个集合或普通数组进行比较。此方法将返回原始集合中不存在于给定集合中的值：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -236,8 +246,10 @@ diff.all();
 
 3.13 ``diffAssoc()``
 ---
-The diffAssoc method compares the collection against another collection or a plain object based on its keys and values. 
-This method will return the key / value pairs in the original collection that are not present in the given collection:
+diffassoc方法基于key和value来比较集合和简单对象。
+此方法将返回原始集合中不存在于给定集合中的键/值对：
+
+
 ```js
 const collection = collect({
   color: 'orange',
@@ -259,7 +271,8 @@ diff.all();
 
 3.14 ``diffKeys()``
 ---
-The diffKeys method compares the collection against another collection or a plain object based on its keys. This method will return the key / value pairs in the original collection that are not present in the given collection:
+diffkeys方法基于key比较集合或者普通对象。此方法将返回原始集合中不存在于给定集合中的键/值对：
+
 ```js
 const collection = collect({
   a: 'a',
@@ -280,7 +293,8 @@ diff.all();
 
 3.15 ``dump()``
 ---
-The dump method outputs the results at that moment and then continues processing:
+dump方法在此时输出结果，然后继续执行：
+
 ```js
 collect([1, 2, 3, 4])
   .dump()
@@ -293,7 +307,8 @@ collect([1, 2, 3, 4])
 
 3.16 ``each()``
 ---
-The each method iterates over the items in the collection and passes each item to a callback:
+each方法通过回调方法遍历集合中的对象：
+
 ```js
 let sum = 0;
 
@@ -307,7 +322,8 @@ collection.each(function (item) {
 //=> 14
 ```
 
-If you would like to stop iterating through the items, you may return false from your callback:
+如果想停止遍历项目，需要从回调中返回false：
+
 ```js
 let sum = 0;
 
@@ -327,7 +343,8 @@ collection.each(function (item) {
 
 3.17 ``eachSpread()``
 ---
-The eachSpread method iterates over the collection's items, passing each nested item value into the given callback:
+eachspread方法遍历集合的对象，通过各嵌套项目的值作为参数传入回调函数：
+
 ```js
 const collection = collect([['John Doe', 35], ['Jane Doe', 33]]);
 
@@ -336,7 +353,8 @@ collection.eachSpread((name, age) => {
 });
 ```
 
-You may stop iterating through the items by returning false from the callback:
+可以通过从回调返回false来停止遍历项目：
+
 ```js
 collection.eachSpread((name, age) => {
     return false;
@@ -345,7 +363,9 @@ collection.eachSpread((name, age) => {
 
 3.18 ``every()``
 ---
-The every method may be used to verify that all elements of a collection pass a given truth test:
+
+every方法可以用来验证集合的所有元素的真值检验：
+
 ```js
 collect([1, 2, 3, 4]).every(function (value, key) {
   return value > 2;
@@ -356,7 +376,9 @@ collect([1, 2, 3, 4]).every(function (value, key) {
 
 3.19 ``except()``
 ---
-The except method returns all items in the collection except for those with the specified keys:
+except方法返回集合中除了指定键的那些外的所有项：
+
+
 ```js
 const collection = collect({
   product_id: 1,
@@ -377,11 +399,12 @@ collect([1, 2, 3, 4]).except([2, 12]).all();
 //=> [1, 3, 4]
 ```
 
-> For the inverse of ``except``, see the ``only`` method.
+> `except`方法的相反的操作，参见`only`方法。
 
 3.20 ``filter()``
 ---
-The filter method filters the collection using the given callback, keeping only those items that pass a given truth test:
+filter方法使用给定的回调来过滤集合，只保留返回值为true的对象：
+
 ```js
 const collection = collect([1, 2, 3, 4]);
 
@@ -394,7 +417,8 @@ filtered.all();
 //=> [3, 4]
 ```
 
-If no callback is supplied, all entries of the collection that are equivalent to `false` will be removed:
+如果不提供回调，则所有与`false`等效的集合的条目将被删除：
+
 
 ```js
 const collection = collect([0, 1, 2, null, 3, 4, undefined, 5, 6, 7, [], 8, 9, {}, 10]);
@@ -406,11 +430,12 @@ filtered.all();
 //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
-> For the inverse of ``filter``, see the ``reject`` method.
+> `filter`方法的相反的操作，参见`reject`方法。
 
 3.21 ``first()``
 ---
-The first method returns the first element in the collection that passes a given truth test:
+first方法返回集合中传递回调方法中返回true的第一个元素：
+
 ```js
 collect([1, 2, 3, 4]).first(function (item) {
   return item > 1;
@@ -418,7 +443,9 @@ collect([1, 2, 3, 4]).first(function (item) {
 
 //=> 2
 ```
-You may also call the first method with no arguments to get the first element in the collection. If the collection is empty, null is returned:
+
+还可以不传参数调用first方法，来获取集合中的第一个元素。如果集合为空，则返回null：
+
 ```js
 collect([1, 2, 3, 4]).first();
 
@@ -427,7 +454,9 @@ collect([1, 2, 3, 4]).first();
 
 3.22 ``firstWhere()``
 ---
-The firstWhere method returns the first element in the collection with the given key / value pair:
+firstwhere方法返回集合中与给定的键/值对(key/value)匹配的第一个元素：
+
+
 ```js
 const collection = collect([
     {name: 'Regena', age: 12},
@@ -443,7 +472,8 @@ collection.firstWhere('name', 'Linda');
 
 3.23 ``flatMap()``
 ---
-The flatMap method iterates through the collection and passes each value to the given callback. The callback is free to modify the item and return it, thus forming a new collection of modified items. Then, the array is flattened by a level:
+flatmap方法通过回调函数遍历集合。回调可以自由地修改项目并返回它，从而形成一个新的集合。然后，数组被降低一个维度.
+
 ```js
 const collection = collect([
  { name: 'Robbie Fowler' },
@@ -464,7 +494,8 @@ flatMapped.all();
 
 3.24 ``flatten()``
 ---
-The flatten method flattens a multi-dimensional collection into a single dimension:
+flatten方法把一个多维集合成一个单一的维度：
+
 ```js
 const collection = collect({
   club: 'Liverpool',
@@ -477,7 +508,7 @@ flattened.all();
 
 //=> ['Liverpool', 'Sturridge', 'Firmino', 'Coutinho'];
 ```
-You may optionally pass the function a "depth" argument:
+可以随意地传递函数一个“深度”参数：
 ```js
 const collection = collect({
   Apple: [{
@@ -500,11 +531,13 @@ flattened.all();
 //=> ]
 ```
 
-In this example, calling flatten without providing the depth would have also flattened the nested arrays, resulting in ``['iPhone 6S', 'Apple', 'Galaxy S7', 'Samsung']``. Providing a depth allows you to restrict the levels of nested arrays that will be flattened.
+在这个例子中，调用不提供深度也会变为一维的嵌套数组，生成` ` [ 'iphone 6s '，'Apple'，'Galaxy S7 '，'Samsung' ` ` ]。提供深度可以限制将扁平化的嵌套数组的层级。
+
 
 3.25 ``flip()``
 ---
-The flip method swaps the collection's keys with their corresponding values:
+flip方法将集合的键与相应的值交换：
+
 ```js
 const collection = collect({
   name: 'Steven Gerrard',
@@ -523,7 +556,8 @@ flipped.all();
 
 3.26 ``forget()``
 ---
-The forget method removes an item from the collection by its key:
+forget方法通过其键从集合中移除项：
+
 ```js
 const collection = collect({
   name: 'Steven Gerrard',
@@ -538,11 +572,15 @@ collection.all();
 //=>   name: 'Steven Gerrard'
 //=> }
 ```
-> Unlike most other collection methods, forget does not return a new modified collection; it modifies the collection it is called on.
+
+> 与大多数其他集合方法不同，forget不返回一个新的修改后的集合；它修改调用的集合。
 
 3.27 ``forPage()``
 ---
-The forPage method returns a new collection containing the items that would be present on a given page number. The method accepts the page number as its first argument and the number of items to show per page as its second argument:
+
+forpage方法返回一个新的集合中的指定页码包含的对象。该方法接受页码作为第一个参数，每页显示的项目数作为第二个参数：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
@@ -555,7 +593,9 @@ forPage.all();
 
 3.28 ``get()``
 ---
-The get method returns the item at a given key. If the key does not exist, ``null`` is returned:
+get方法返回key对应的值。如果key不存在，则返回“null”：
+
+
 ```js
 const collection = collect({
   firstname: 'Chuck',
@@ -570,7 +610,8 @@ collection.get('middlename');
 //=> null
 ```
 
-You may optionally pass a default value as the second argument:
+可以将默认值作为第二个参数传递：
+
 ```js
 const collection = collect({
   firstname: 'Chuck',
@@ -580,7 +621,8 @@ const collection = collect({
 collection.get('middlename', 'default-value');
 //=> default-value
 ```
-You may even pass a callback as the default value. The result of the callback will be returned if the specified key does not exist:
+
+甚至可以将回调作为默认值传递。如果指定的键不存在，回调的结果将返回：
 
 ```js
 const collection = collect({
@@ -596,7 +638,9 @@ collection.get('middlename', function () {
 ```
 3.29 ``groupBy()``
 ---
-The groupBy method groups the collection's items by a given key:
+GroupBy方法用一个指定key组合一个集合中的对象：
+
+
 ```js
 const collection = collect([
   {
@@ -642,8 +686,7 @@ grouped.all();
 //=>   ]
 //=> }
 ```
-
-In addition to passing a string key, you may also pass a callback. The callback should return the value you wish to key the group by:
+除了传递字符串键之外，还可以传递回调函数。回调函数应该返回希望组合的值：
 
 ```js
 const collection = collect([
@@ -695,7 +738,9 @@ grouped.all();
 
 3.30 ``has()``
 ---
-The has method determines if one or more keys exists in the collection:
+has方法判断集合中是否存在一个或多个键：
+
+
 ```js
 const collection = collect({
   animal: 'unicorn',
@@ -717,7 +762,8 @@ collection.has(['animal', 'ability', 'name']);
 
 3.31 ``implode()``
 ---
-The implode method joins the items in a collection. Its arguments depend on the type of items in the collection. If the collection contains arrays or objects, you should pass the key of the attributes you wish to join, and the "glue" string you wish to place between the values:
+implode方法连接集合中对象。它的参数取决于集合中的项类型。如果集合包含数组或对象，则应传递希望加入的属性的key和value之间的“胶水”字符串：
+
 ```js
 const collection = collect([{
     product: 'Chair',
@@ -734,7 +780,8 @@ collection.implode('product', ',');
 
 //=> Chair, Desk, Chair
 ```
-If the collection contains simple strings or numeric values, simply pass the "glue" as the only argument to the method:
+如果集合包含简单的字符串或数字，只传递“胶水”参数：
+
 ```js
 collect([1, 2, 3, 4, 5]).implode('-');
 
@@ -743,7 +790,8 @@ collect([1, 2, 3, 4, 5]).implode('-');
 
 3.32 ``intersect()``
 ---
-The intersect method removes any values from the original collection that are not present in the given ``array`` or ``collection``. The resulting collection will preserve the original collection's keys:
+intersect方法从集合删除给定的数组或者集合中不存在的值。生成的集合将保存原始集合的key：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -756,7 +804,8 @@ intersect.all();
 
 3.33 ``intersectByKeys()``
 ---
-The intersectByKeys method removes any keys from the original collection that are not present in the given ``array`` or collection:
+intersectbykeys方法从原来的集合中删除不在给定的数组或集合中的key值：
+
 ```js
 const collection = collect({
     serial: 'UX301',
@@ -788,7 +837,9 @@ intersect.all();
 
 3.34 ``isEmpty()``
 ---
-The isEmpty method returns true if the collection is empty; otherwise, false is returned:
+isEmpty方法,如果集合是空的返回true；否则，返回false：
+
+
 ```js
 collect([]).isEmpty();
 
@@ -806,7 +857,8 @@ collect([1, 2, 3]).isNotEmpty();
 
 3.36 ``keyBy()``
 ---
-The keyBy method keys the collection by the given key. If multiple items have the same key, only the last one will appear in the new collection:
+keyby方法由给定的key值给集合过滤。如果多个项具有相同的键，则只有最后一个项将出现在新集合中：
+
 ```js
 const collection = collect([
   {
@@ -837,7 +889,9 @@ keyed.all();
 //=> }
 ```
 
-You may also pass a callback to the method. The callback should return the value to key the collection by:
+还可以将回调传递给方法。回调函数应该返回集合中key对应的值:
+
+
 ```js
 const keyedUpperCase = collection.keyBy(function (item) {
   return item['manufacturer'].toUpperCase();
@@ -859,7 +913,9 @@ keyedUpperCase.all();
 
 3.37 ``keys()``
 ---
-The keys method returns all of the collection's keys:
+keys方法返回集合的所有key：
+
+
 ```js
 const collection = collect([{
   name: 'Steven Gerrard',
@@ -876,7 +932,8 @@ keys = collection.keys();
 
 3.38 ``last()``
 ---
-The last method returns the last element in the collection that passes a given truth test:
+last方法返回,集合中的最后一个回调方法返回true的元素：
+
 ```js
 const collection = collect([1, 2, 3]);
 
@@ -886,7 +943,7 @@ const last = collection.last(function (item) {
 
 //=> 3
 ```
-You may also call the last method with no arguments to get the last element in the collection. If the collection is empty, null is returned:
+还可以调用没有参数的last方法来获取集合中的最后一个元素。如果集合为空，则返回null：
 ```js
 collect([1, 2, 3, 4]).last();
 
@@ -895,7 +952,7 @@ collect([1, 2, 3, 4]).last();
 
 3.39 ``macro()``
 ---
-The macro method lets you register custom methods
+macro方法允许您注册自定义方法。
 ```js
 collect().macro('uppercase', function () {
   return this.map(function (item) {
@@ -911,11 +968,16 @@ collection.all();
 
 //=> ['A', 'B', 'C']
 ```
-> Note that the `macro` method returns `undefined`, and therefore it is not possible to use it within a chain of methods.
+
+> 注意`macro`方法返回`undefined`，因此不可能在有先后关系的方法中使用它。
+
 
 3.40 ``map()``
 ---
-The map method iterates through the collection and passes each value to the given callback. The callback is free to modify the item and return it, thus forming a new collection of modified items:
+
+map方法经过每一个值的回调函数遍历集合。回调可以自由地修改项目并返回它，从而形成一个新的修改项目集合：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -928,11 +990,14 @@ multiplied.all();
 //=> [2, 4, 6, 8, 10]
 ```
 
-> Like most other collection methods, ``map`` returns a new collection instance; it does not modify the collection it is called on. If you want to transform the original collection, use the ``transform`` method.
+> 像大多数其他集合方法一样，``map``返回一个新的集合实例；它不修改调用的集合。如果要转换原始集合，请使用``transform``方法。
 
 3.41 ``mapInto()``
 ---
-The mapInto method iterates through the collection and instantiates the given class with each element as a constructor:
+
+mapinto方法遍历集合,每个元素作为一个构造函数实例化给定类：
+
+
 ```js
 const Player = function (name) {
   this.name = name;
@@ -955,8 +1020,10 @@ players.all();
 
 3.42 ``mapSpread()``
 ---
-The mapSpread method iterates over the collection's items, passing each nested item value into the given callback.
-The callback is free to modify the item and return it, thus forming a new collection of modified items:
+
+mapspread方法通过各嵌套项目value为回调函数参数遍历集合的项目。
+回调可以自由地修改项目并返回它，从而形成一个新的目集合：
+
 ```js
 const collection = collect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
@@ -973,8 +1040,9 @@ sequence.all();
 
 3.43 ``mapToDictionary()``
 ---
-Run a dictionary map over the items.
-The callback should return an associative array with a single key/value pair.
+将对象进行dictionary映射。
+回调应该返回一个带有一个key/value对的关联数组。
+
 ```js
 const collection = collect([
   { id: 1, name: 'a' },
@@ -996,7 +1064,8 @@ groups.all();
 
 3.44 ``mapToGroups()``
 ---
-The mapToGroups method iterates through the collection and passes each value to the given callback:
+maptogroups方法将每一个元素的value作为参数传入回调函数遍历集合：
+
 ```js
 const collection = collect([
   { id: 1, name: 'A' },
@@ -1018,7 +1087,8 @@ const groups = collection.mapToGroups(function (item, key) {
 
 3.45 ``mapWithKeys()``
 ---
-The mapWithKeys method iterates through the collection and passes each value to the given callback. The callback should return an array where the first element represents the key and the second element represents the value pair:
+mapwithkeys方法遍历集合，将每一个元素的值传入回调函数。回调应该返回一个数组，其中第一个元素代表键，第二个元素表示值对：
+
 ```js
 const collection = collect([{
     'name': 'John',
@@ -1044,7 +1114,8 @@ keyed.all();
 
 3.46 ``max()``
 ---
-The max method returns the maximum value of a given key:
+max方法返回给定key的最大值：
+
 ```js
 const collection = collect([{
   value: 10
@@ -1068,7 +1139,9 @@ collect([-1, -2345, 12, 11, 3]).max();
 
 3.47 ``median()``
 ---
-The median method returns the median value of a given key:
+median方法返回给定key的中值：
+
+
 ```js
 collect([1, 3, 3, 6, 7, 8, 9]).median();
 
@@ -1091,7 +1164,9 @@ collect([{
 
 3.48 ``merge()``
 ---
-The merge method merges the given object into the original collection. If a key in the given object matches a key in the original collection, the given objects value will overwrite the value in the original collection:
+
+merge方法将给定对象合并到原始集合中。如果给定对象中的键与原始集合中的键匹配，则给定对象值将覆盖原始集合中的值：
+
 ```js
 const collection = collect({
   id: 1,
@@ -1107,7 +1182,9 @@ merged.all();
 
 //=> {id: 1, price: 400, discount: false}
 ```
-If our collection is an array, the values will be appended to the end of the collection:
+
+如果我们的集合是一个数组，那么值将被附加到集合的结尾：
+
 ```js
 const collection = collect(['Unicorn', 'Rainbow']);
 
@@ -1120,7 +1197,8 @@ merged.all();
 
 3.49 ``min()``
 ---
-The min method returns the minimum value of a given key:
+min方法返回给定key的最小值：
+
 ```js
 const collection = collect[{
   worth: 100
@@ -1142,7 +1220,8 @@ collect([1, 2, 3, 4, 5]).min();
 
 3.50 ``mode()``
 ---
-The mode method returns the mode value of a given key:
+mode方法返回给定key的众数值：
+
 ```js
 collect([1, 3, 3, 6, 7, 8, 9]).mode();
 
@@ -1165,7 +1244,8 @@ collect([{
 
 3.51 ``nth()``
 ---
-The nth method creates a new collection consisting of every n-th element:
+nth方法创建一个新的集合，由每一个位置可以被n整除的元素组成：
+
 ```js
 const collection = collect(['a', 'b', 'c', 'd', 'e', 'f']);
 
@@ -1178,7 +1258,8 @@ nth.all();
 
 3.52 ``only()``
 ---
-The only method returns the items in the collection with the specified keys:
+only方法返回集合中对象中指定key值的数据：
+
 ```js
 const collection = collect({
   id: 12,
@@ -1199,14 +1280,17 @@ collect([1, 2, 3, 4]).only([2, 12]).all();
 
 //=> [2]
 ```
-> For the inverse of ``only``, see the ``except`` method.
+
+> `only`方法的相反的操作，参见`except`方法。
+
 
 3.53 ``pad()``
 ---
-The pad method will fill the array with the given value until the array reaches the specified size. This method 
-behaves like the [array_pad](https://secure.php.net/manual/en/function.array-pad.php) PHP function.
+pad方法将用给定值填充数组，直到数组达到指定的大小为止。
+此方法的行为类似于[array_pad](https://secure.php.net/manual/en/function.array-pad.php) PHP 方法.
+若要向左填充，应指定负大小。如果给定大小的绝对值小于或等于数组的长度，则不会发生填充：
 
-To pad to the left, you should specify a negative size. No padding will take place if the absolute value of the given size is less than or equal to the length of the array:
+
 ```js
 const collection = collect(['A', 'B', 'C']);
 
@@ -1225,7 +1309,9 @@ filtered.all();
 
 3.54 ``partition()``
 ---
-The partition method may be combined with destructuring to separate elements that pass a given truth test from those that do not:
+partition方法可以通过特定条件分离集合：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5, 6]);
 
@@ -1236,7 +1322,8 @@ const [underThree, overThree] = collection.partition(function (i) {
 
 3.55 ``pipe()``
 ---
-The pipe method passes the collection to the given callback and returns the result:
+pipe方法将集合传递给给定的回调函数并返回结果：
+
 ```js
 const collection = collect([1, 2, 3]);
 
@@ -1249,7 +1336,8 @@ const piped = collection.pipe(function (collection) {
 
 3.56 ``pluck()``
 ---
-The pluck method retrieves all of the values for a given key:
+pluck方法检索给定键的所有值：
+
 ```js
 const collection = collect([{
   id: 78,
@@ -1266,7 +1354,9 @@ plucked.all();
 //=> ['Aeron', 'Embody']
 ```
 
-You may also specify how you wish the resulting collection to be keyed:
+还可以指定希望如何将结果集合通过key进行索引：
+
+
 ```js
 const collection = collect([{
   id: 78,
@@ -1288,7 +1378,8 @@ plucked.all();
 
 3.57 ``pop()``
 ---
-The pop method removes and returns the last item from the collection:
+pop方法将从集合中删除并返回最后一项：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1303,7 +1394,8 @@ collection.all();
 
 3.58 ``prepend()``
 ---
-The prepend method adds an item to the beginning of the collection:
+prepend方法在将元素添加到集合的开头：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1314,10 +1406,11 @@ collection.all();
 //=> [0, 1, 2, 3, 4, 5]
 ```
 
-You may also pass a second argument to set the key of the prepended item:
 
-> Pro tip: Order of properties in objects is not guaranteed in JavaScript; When calling prepend with a key, the Collection uses the underlying ``put`` method behind the scenes. This is only supported so that collect.js have the same api as Laravel Collections.
+也可以通过第二个参数设置的key值：
 
+
+> 小贴士：在JavaScript中对象属性的顺序是不一定的; 用key调用prependf方法时，集合使用底层的``put``。只有通过这样，collect.js才能有和laravel相同API。
 ```js
 const collection = collect({
   product: 'iPhone 6s'
@@ -1335,7 +1428,8 @@ collection.all():
 
 3.59 ``pull()``
 ---
-The pull method removes and returns an item from the collection by its key:
+pull法通过键移除并从集合返回一个项：
+
 ```js
 const collection = collect({
   firstname: 'Michael',
@@ -1353,7 +1447,8 @@ collection.all();
 
 3.60 ``push()``
 ---
-The push method appends an item to the end of the collection:
+push方法附加一个项目到集合的末尾：
+
 ```js
 const collection = collect([1, 2, 3, 4]);
 
@@ -1366,7 +1461,8 @@ collection.all();
 
 3.61 ``put()``
 ---
-The put method sets the given key and value in the collection:
+put方法在集合中设置给定的键和值：
+
 ```js
 const collection = collect(['JavaScript', 'Python']);
 
@@ -1379,7 +1475,8 @@ collection.all();
 
 3.62 ``random()``
 ---
-The random method returns a random item from the collection:
+random方法从集合中返回一个随机项：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1388,7 +1485,9 @@ collection.random();
 //=> 4 (retrieved randomly)
 ```
 
-You may optionally pass an integer to random to specify how many items you would like to randomly retrieve. If that integer is more than 1, a collection of items is returned:
+可以随意将一个整数传递给random方法，以指定要随机检索多少项。如果该整数大于1，则返回一个项目集合：
+
+
 ```js
 const random = collection.random(3);
 
@@ -1397,7 +1496,8 @@ const random = collection.random(3);
 
 3.63 ``reduce()``
 ---
-The reduce method reduces the collection to a single value, passing the result of each iteration into the subsequent iteration:
+reduce方法将集合减少到单个值，将每个迭代的结果传递到后续迭代中：
+
 ```js
 const collection = collect([1, 2, 3]);
 
@@ -1408,7 +1508,8 @@ const total = collection.reduce(function (carry, item) {
 //=> 6
 ```
 
-The value for ``carry`` on the first iteration is null; however, you may specify its initial value by passing a second argument to reduce:
+在第一次迭代中，``carry``的值是null；但是，您可以通过传递第二个参数来指定它的初始值：
+
 ```js
 const total = collection.reduce(function (carry, item) {
   return carry + item;
@@ -1419,7 +1520,8 @@ const total = collection.reduce(function (carry, item) {
 
 3.64 ``reject()``
 ---
-The reject method filters the collection using the given callback. The callback should return true if the item should be removed from the resulting collection:
+reject方法使用给定回调函数过滤集合。如果从结果集合中删除该项，则回调应该返回true：
+
 ```js
 const collection = collect([1, 2, 3, 4]);
 
@@ -1430,11 +1532,13 @@ const filtered = collection.reject(function (value) {
 //=> [1, 2]
 ```
 
-> For the inverse of the ``reject`` method, see the ``filter`` method.
+> `reject`方法的相反的操作，参见`filter`方法。
 
 3.65 ``reverse()``
 ---
-The reverse method reverses the order of the collection's items:
+
+reverse方法反转集合项的顺序：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1447,7 +1551,10 @@ reversed.all();
 
 3.66 ``search()``
 ---
-The search method searches the collection for the given value and returns its key if found. If the item is not found, false is returned.
+
+search方法搜索集合中给定的值，如果找到的话返回它的key。如果未找到该项，则返回false。
+
+
 ```js
 const collection = collect([2, 4, 6, 8]);
 
@@ -1455,15 +1562,17 @@ collection.search(4);
 
 //=> 1
 ```
+search是通过“松散”比较来完成的，这意味着一个整数值的字符串将被认为等于一个相同值的整数。若要使用严格的比较，请将true作为方法的第二个参数：
 
-The search is done using a "loose" comparison, meaning a string with an integer value will be considered equal to an integer of the same value. To use strict comparison, pass true as the second argument to the method:
 ```js
 collection.search('4', true);
 
 //=> false
 ```
 
-Alternatively, you may pass in your own callback to search for the first item that passes your truth test:
+或者，可以通过自己的回调来搜索返回true的第一个项目：
+
+
 ```js
 collection.search(function (item, key) {
   return item > 5;
@@ -1474,7 +1583,9 @@ collection.search(function (item, key) {
 
 3.67 ``shift()``
 ---
-The shift method removes and returns the first item from the collection:
+shift方法从集合中移除并返回第一项：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1489,7 +1600,9 @@ collection.all();
 
 3.68 ``shuffle()``
 ---
-The shuffle method randomly shuffles the items in the collection:
+shuffle将集合中的项随机排序：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1502,7 +1615,9 @@ shuffled.all();
 
 3.69 ``slice()``
 ---
-The slice method returns a slice of the collection starting at the given index:
+slice方法从给定索引开始返回集合的一部分：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
@@ -1513,7 +1628,8 @@ slice.all();
 //=> [5, 6, 7, 8, 9, 10]
 ```
 
-If you would like to limit the size of the returned slice, pass the desired size as the second argument to the method:
+如果想限制返回的片的大小，请将所需的大小作为第二个参数传递给方法：
+
 
 ```js
 const slice = collection.slice(4, 2);
@@ -1525,7 +1641,8 @@ slice.all();
 
 3.70 ``sort()``
 ---
-The sort method sorts the collection:
+sort方法对集合进行排序：
+
 ```js
 const collection = collect([5, 3, 1, 2, 4]);
 
@@ -1536,7 +1653,8 @@ sorted.all();
 //=> [1, 2, 3, 4, 5]
 ```
 
-> If your sorting needs are more advanced, you may pass a callback to sort with your own algorithm.
+> 如果您排序需要更高级，可以通过回调来用自己的算法进行排序。
+
 
 ```js
 const collection = collect([5, 3, 1, 2, 4]);
@@ -1550,11 +1668,13 @@ sorted.all();
 //=> [5, 4, 3, 2, 1]
 ```
 
-> If you need to sort a collection of nested arrays or objects, see the ``sortBy`` and ``sortByDesc`` methods.
+> 如果需要排序嵌套数组或对象，参考``sortBy`` 和`sortByDesc``方法。
+
 
 3.71 ``sortBy()``
 ---
-The sortBy method sorts the collection by the given key. The sorted collection keeps the original array keys, so in this example we'll use the values method to reset the keys to consecutively numbered indexes:
+sortBy方法排序由给定的键key的集合。排序的集合保留原来的数组键，因此在本例中，我们将使用值方法将key重置为连续编号索引：
+
 ```js
 const collection = collect([
   {name: 'Desk', price: 200},
@@ -1573,7 +1693,8 @@ sorted.all();
 //=> ]
 ```
 
-You can also pass your own callback to determine how to sort the collection values:
+还可以通过自己的回调来确定如何对集合值进行排序：
+
 ```js
 const collection = collect([
   {name: 'Desk', colors: ['Black', 'Mahogany']},
@@ -1596,11 +1717,14 @@ sorted.all();
 
 3.72 ``sortByDesc()``
 ---
-This method has the same signature as the ``sortBy`` method, but will sort the collection in the opposite order.
+sortByDesc方法具有相同的签名的``sortBy``方法，但以相反的顺序排序。
+
 
 3.73 ``splice()``
 ---
-The splice method removes and returns a slice of items starting at the specified index:
+splice方法从指定索引处移除一个元素并返回修改后的数组：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1614,7 +1738,10 @@ collection.all();
 
 //=> [1, 2]
 ```
-You may pass a second argument to limit the size of the resulting chunk:
+
+可以传递第二个参数来限制结果块的大小：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1631,7 +1758,8 @@ collection.all();
 
 3.74 ``split()``
 ---
-The split method breaks a collection into the given number of groups:
+split方法将集合分解为给定的组数：
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1640,7 +1768,9 @@ const groups = collection.split(3);
 //=> [[1, 2], [3, 4], [5]]
 ```
 
-In addition, you can pass a third argument containing the new items to replace the items removed from the collection:
+此外，还可以传递的第三参数作为新的元素，以替换从集合中移除的项：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1657,14 +1787,17 @@ collection.all();
 
 3.75 ``sum()``
 ---
-The sum method returns the sum of all items in the collection:
+sum方法返回集合中所有项的和：
+
 ```js
 collect([1, 2, 3]).sum();
 
 //=> 6
 ```
 
-If the collection contains nested arrays or objects, you should pass a key to use for determining which values to sum:
+如果集合包含嵌套数组或对象，则应传递一个键用于确定要相加的值：
+
+
 ```js
 const collection = collect([
   {name: 'JavaScript: The Good Parts', pages: 176},
@@ -1675,8 +1808,8 @@ collection.sum('pages');
 
 //=> 1272
 ```
+此外，还可以通过自己的回调来返回需要相加的值：
 
-In addition, you may pass your own callback to determine which values of the collection to sum:
 ```js
 const collection = collect([
   {name: 'Desk', colors: ['Black', 'Mahogany']},
@@ -1693,8 +1826,10 @@ const total = collection.sum(function (product) {
 
 3.76 ``take()``
 ---
-The take method returns a new collection with the specified number of items:
-You may also pass a negative integer to take the specified amount of items from the end of the collection:
+take方法返回一个具有指定项目数的新集合：
+还可以传递一个负整数，从集合的结尾取指定数量的元素：
+
+
 ```js
 const collection = collect([0, 1, 2, 3, 4, 5]);
 
@@ -1707,7 +1842,9 @@ chunk.all();
 
 3.77 ``tap()``
 ---
-The tap method passes the collection to the given callback, allowing you to "tap" into the collection at a specific point and do something with the items while not affecting the collection itself:
+tap方法将集合传递给给定的回调函数，允许您在特定的点“点击”到集合中，并在不影响集合本身的情况下对元素做一些事情：
+
+
 ```js
 const collect([2, 4, 3, 1, 5])
   .sort()
@@ -1723,7 +1860,8 @@ const collect([2, 4, 3, 1, 5])
 
 3.78 ``times()``
 ---
-The times method creates a new collection by invoking the callback a given amount of times:
+times方法通过调用给定次数的回调创建一个新集合：
+
 ```js
 const collection = collect().times(10, function (number) {
   return number * 9;
@@ -1736,8 +1874,10 @@ collection.all();
 
 3.79 ``toArray()``
 ---
-The toArray method converts the collection into a plain array.
-If the collection is an object, an array containing the values will be returned.
+toArray方法将收集到一个数组。
+如果集合是一个对象，则返回一个包含值的数组。
+
+
 ```js
 const collection = collect([1, 2, 3, 'b', 'c']);
 
@@ -1763,7 +1903,9 @@ collection.toArray();
 
 3.80 ``toJson()``
 ---
-The toJson method converts the collection into JSON string:
+toJson方法将集合转化为JSON字符串：
+
+
 ```js
 const collection = collect({
   id: 384,
@@ -1778,7 +1920,9 @@ const json = collection.toJson();
 
 3.81 ``transform()``
 ---
-The transform method iterates over the collection and calls the given callback with each item in the collection. The items in the collection will be replaced by the values returned by the callback:
+transform方法遍历集合并通回调调用给定集合中的每个元素。集合中元素目将由回调返回的值替换：
+
+
 ```js
 const collection = collect([1, 2, 3, 4, 5]);
 
@@ -1791,11 +1935,12 @@ collection.all();
 //=> [2, 4, 6, 8, 10]
 ```
 
-> Unlike most other collection methods, ``transform`` modifies the collection itself. If you wish to create a new collection instead, use the ``map`` method.
+> 与大多数其他集合方法不同，``transform``修改集合本身。如果您希望创建一个新的集合，请使用``map``方法。
 
 3.82 ``union()``
 ---
-The union method adds the given array to the collection. If the given array contains keys that are already in the original collection, the original collection's values will be preferred:
+union方法将给定数组添加到集合中。如果给定数组包含已经存在于原始集合中的key，则首选原始集合的value：
+
 ```js
 const collection = collect({
   a: 'A',
@@ -1819,7 +1964,9 @@ union.all();
 
 3.83 ``unique()``
 ---
-The unique method returns all of the unique items in the collection:
+unique方法给集合去重并返回：
+
+
 ```js
 const collection = collect([1, 1, 1, 2, 3, 3]);
 
@@ -1830,7 +1977,9 @@ unique.all();
 //=> [1, 2, 3]
 ```
 
-When dealing with an array of objects, you may specify the key used to determine uniqueness:
+在处理一组对象时，可以指定用于确定唯一性的键：
+
+
 ```js
 const collection = collect([
   {name: 'iPhone 6', brand: 'Apple', type: 'phone'},
@@ -1850,7 +1999,8 @@ unique.all();
 //=> ]
 ```
 
-You may also pass your own callback to determine item uniqueness:
+还可以通过自己的回调来确定项目的唯一性：
+
 ```js
 const collection = collect([
   {name: 'iPhone 6', brand: 'Apple', type: 'phone'},
@@ -1876,7 +2026,8 @@ unique.all();
 
 3.84 ``unless()``
 ---
-The unless method will execute the given callback when the first argument given to the method evaluates to false:
+当方法的第一个参数计算为false时，unless方法将执行给定的回调函数：
+
 ```js
 const collection = collect([1, 2, 3]);
 
@@ -1891,7 +2042,9 @@ collection.all();
 
 3.85 ``unwrap()``
 ---
-The unwrap method will unwrap the given collection:
+unwrap方法将展开给定集合：
+
+
 ```js
 const collection = collect([1, 2, 3]);
 
@@ -1902,7 +2055,8 @@ collect().unwrap(collection);
 
 3.86 ``values()``
 ---
-The values method returns a new collection with the keys reset to consecutive integers:
+values方法返回一个新的集合，key重置为连续整数：
+
 ```js
 const collection = collect({a: 'xoxo', b: 'abab', 'c': '1337', 1337: 12});
 
@@ -1915,7 +2069,8 @@ values.all();
 
 3.89 ``when()``
 ---
-The when method will execute the given callback when the first argument given to the method evaluates to true:
+当方法的第一个参数计算为true时，when方法将执行给定的回调函数：
+
 ```js
 const collection = collect([1, 2, 3]);
 
@@ -1930,7 +2085,8 @@ collection.all();
 
 3.90 ``where()``
 ---
-The where method filters the collection by a given key / value pair:
+where方法通过给定的键/值对过滤集合：
+
 ```js
 const collection = collect([
   {product: 'Desk', price: 200},
@@ -1949,8 +2105,9 @@ filtered.all();
 //=> ]
 ```
 
-The where method also allows for custom comparisons:
-**Non-identity / strict inequality ``(!==)``**
+where方法还允许进行自定义比较：
+
+**非同一性 / 严格不等式 ``(!==)``**
 ```js
 const filtered = collection.where('price', '!==', 100);
 
@@ -1961,7 +2118,7 @@ filtered.all();
 //=>   {product: 'Bookcase', price: 150}
 //=> ]
 ```
-**Less than operator ``(<)``**
+**小于操作符 ``(<)``**
 ```js
 const filtered = collection.where('price', '<', 100);
 
@@ -1969,7 +2126,7 @@ filtered.all();
 
 //=> []
 ```
-**Less than or equal operator ``(<=)``**
+**小于或等于运算符 ``(<=)``**
 ```js
 const filtered = collection.where('price', '<=', 100);
 
@@ -1981,7 +2138,7 @@ filtered.all();
 //=> ]
 ```
 
-**Greater than operator ``(>)``**
+**大于运算符 ``(>)``**
 ```js
 const filtered = collection.where('price', '>', 100);
 
@@ -1992,7 +2149,7 @@ filtered.all();
 //=>   {product: 'Bookcase', price: 150}
 //=> ]
 ```
-**Greater than or equal operator ``(>=)``**
+**大于或等于运算符 ``(>=)``**
 ```js
 const filtered = collection.where('price', '>=', 150);
 
@@ -2006,7 +2163,8 @@ filtered.all();
 
 3.91 ``whereIn()``
 ---
-The whereIn method filters the collection by a given key / value contained within the given array.
+whereIn方法通过给定数组中包含的给定键/值筛选集合。
+
 ```js
 const collection = collect([
   {product: 'Desk', price: 200},
@@ -2028,7 +2186,8 @@ filtered.all();
 
 3.92 ``whereNotIn()``
 ---
-The whereNotIn method filters the collection by a given key / value not contained within the given array:
+whereNotIn方法由给定的键/值过滤不包含在给定的数组或者集合：
+
 ```js
 const collection = collect([
   { product: 'Desk', price: 200 },
@@ -2049,7 +2208,8 @@ filtered.all();
 
 3.93 ``wrap()``
 ---
-The wrap method will wrap the given value in a collection:
+wrap方法将给定值包装在集合中：
+
 ```js
 const collection = collect().wrap([1, 2, 3]);
 
@@ -2060,7 +2220,8 @@ collection.all();
 
 3.94 ``zip()``
 ---
-The zip method merges together the values of the given array with the values of the original collection at the corresponding index:
+zip方法将给定数组的值与原始集合的值合并在对应索引位置上：
+
 ```js
 const collection = collect(['Chair', 'Desk']);
 
@@ -2071,10 +2232,10 @@ zipped.all();
 //=> [['Chair', 100], ['Desk', 200]]
 ```
 
-4 Contribute
+4 贡献
 ===
-PRs are welcomed to this project, and help is needed in order to keep up with the changes of Laravel Collections. If you want to improve the collection library, add functionality or improve the docs please feel free to submit a PR.
+欢迎这一项目提交PRs，并需要这些帮助才能跟上laravel集合的变化。如果您想改进collection库，添加功能或改进文档，请随意提交PR。
 
-5 License
+5 版权
 ===
 MIT © [Daniel Eckermann](http://danieleckermann.com)
