@@ -1435,8 +1435,8 @@ if (typeof jQuery === 'undefined') {
         this.$element = $(element)
         this.options = this.getOptions(options)
         this.$viewport = this.options.viewport && $(
-                $.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) :
-                (this.options.viewport.selector || this.options.viewport))
+            $.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) :
+            (this.options.viewport.selector || this.options.viewport))
         this.inState = {click: false, hover: false, focus: false}
 
         if (this.$element[0] instanceof document.constructor && !this.options.selector) {
@@ -1800,9 +1800,9 @@ if (typeof jQuery === 'undefined') {
                placement == 'top' ? {top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2} :
                placement == 'left' ? {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth} :
                    /* placement == 'right' */ {
-                   top: pos.top + pos.height / 2 - actualHeight / 2,
-                   left: pos.left + pos.width
-               }
+                       top: pos.top + pos.height / 2 - actualHeight / 2,
+                       left: pos.left + pos.width
+                   }
 
     }
 
